@@ -38,7 +38,10 @@
 
                 <ul class="navbar-nav mr-right">
                     
-                    <input type="submit" name="" value="Sign Out">               
+                    <a href="login-page.html"> 
+                        <input type="submit" name="" value="Sign Out">
+                        <img src="images/sign-out.png" alt="sign out-icon">
+                    </a>              
 
                 </ul>
 
@@ -56,9 +59,9 @@
             <div class="accordion" id="accordionExample">
                
                 
-                <a class="active" href="Dashboard.html"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
+                <a class="active hover" href="Dashboard.html"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
 
-                <a class="collapsed buy-airtime" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="collapsed buy-airtime hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -68,7 +71,7 @@
                     </div>
                 </div>
                 
-                <a class="collapsed buy-data" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="collapsed buy-data hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <img src="images/Vector.png"><span>Buy Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -78,7 +81,7 @@
                     </div>
                 </div>
 
-                <a class="collapsed transfer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="collapsed transfer hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -92,25 +95,25 @@
 
                 </div>
 
-                <a href="transaction-history.html"><img src="images/refresh-icon.png" class="refresh-icon"><span>Transaction History</span></a>
+                <a href="transaction-history.html"  class="hover"><img src="images/refresh-icon.png" class="refresh-icon"><span>Transaction History</span></a>
 
                 <p class="utilities">Utilities</p>
 
-                <a href="internet.html"><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
+                <a href="internet.html"  class="hover"><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
 
-                <a href="electricity.html"><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
+                <a href="electricity.html"  class="hover"><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
 
-                <a href="cable-tv.html"><img src="images/television-icon.png" class="television-icon"><span>Cable TV</span></a>
+                <a href="cable-tv.html"  class="hover"><img src="images/television-icon.png" class="television-icon"><span>Cable TV</span></a>
 
-                <a href="toll.html"><img src="images/toll-icon.png" class="toll-icon"><span>Toll</span></a>
+                <a href="toll.html"  class="hover"><img src="images/toll-icon.png" class="toll-icon"><span>Toll</span></a>
 
-                <a href="other-utilities.html" class="other-utilities-text"><img src="images/tools-icon.png" class="tools-icon"><span>Other Utilities</span></a>
+                <a href="other-utilities.html" class="other-utilities-text hover"><img src="images/tools-icon.png" class="tools-icon"><span>Other Utilities</span></a>
                 
                 <hr>
 
 
 
-                <a href="manage-beneficiary.html" class="manage-bene-text"><img src="images/avatar-icon.png" class="avatar-icon"><span>Manage Beneficiaries</span></a>
+                <a href="manage-beneficiary.html" class="manage-bene-text hover"><img src="images/avatar-icon.png" class="avatar-icon"><span>Manage Beneficiaries</span></a>
             
                 <a href="login-page.html" class="sign-out">Sign Out</a>
 
@@ -145,129 +148,128 @@
 
                     <div class="utilities-bar">
                         <div class="container">
-                            <p><img src="images/transfer.svg" alt="transfer" class="transfer">Transfer</p>
-                            <p><img src="images/airtime.svg" alt="airtime" class="airtime">Airtime</p>
-                            <p><img src="images/electricity.svg" alt="electricity" class="electricity">Electricity</p>
-                            <p><img src="images/data.svg" alt="data" class="data">Data</p>
-                            <p><img src="images/internet.svg" alt="internet" class="internet">Internet</p>
-                        </div>  
+                            <p><a href="transfer.html"><img src="images/transfer.svg" alt="transfer" class="transfer">Transfer</a></p>
+                            <p><a href="buy-airtime-self.html"><img src="images/airtime.svg" alt="airtime" class="airtime">Airtime</a></p>
+                            <p><a href="electricity.html"><img src="images/electricity.svg" alt="electricity" class="electricity">Electricity</a></p>
+                            <p><a href="buy-data-self.html"><img src="images/data.svg" alt="data" class="data">Data</a></p>
+                            <p><a href="internet.html"><img src="images/internet.svg" alt="internet" class="internet">Internet</a></p>
+                        </div>
                     </div>
 
-                    <div class="row">
+                    <div class="row dash-row">
+                        <div class="col-md-5 left-dash-row">
 
-                        <div class="col-md-6 left">
                             <div class="first-box">
-                                <div class="header-content1">
-                                    <img src="images/bank-icon.png" alt="bank-icon" class="bank-icon">
-                                    <p>Savings Account</p>
-                                </div>
 
-                                <hr>   
-                             
-                                <p class="amount-text">N120,000</p>
+                                <div class="first-box-header">
+                                    <img src="images/bank-icon.png" class="bank-icon" alt="bank icon"><p>Savings Account</p>
+                                </div>  
 
+                                <hr>
+                                <p class="amount-text">N120,000<i class="fas fa-chevron-right"></i></p>
                                 <p class="available-bal-text">Available Balance</p>
 
-                                <p class="account-num-text">Account Number<span>0140044555</span></p>
-
+                                <p class="account-number-text">Account Number<span>0140044555</span></p>
+ 
                             </div>
 
                             <div class="second-box">
+                                <div class="table-responsive">
                                     <table class="table table-borderless">
-                                            <div class="header-content2"> 
-                                                <img src="images/bank-icon2.png" alt="bank-icon2" class="bank-icon2">
-                                                <span>Account Officers</span>
-                                            </div>
-                                            
-                                            <tbody>
-                                                <div class="first-row"> 
-                                                <tr >
-                                                    
-                                                    <td class="name-text">Dolapo Folarin</td>
-                                                    <td class="num-text">08099878767</td>
-                                                    <td class="copy-email-text">Copy email</td>
-                                                </tr>
-                                            </div>
-                                              <tr class="second-row">
-                                               
-                                                <td class="name-text">Adesina Kolade</td>
-                                                <td class="num-text">08149878767</td>
-                                                <td class="copy-email-text">Copy email</td>
-                                              </tr>
-                                              
-                                            </tbody>
-                                          </table>
-                              
+                                        <thead>
+                                            <tr>            
+                                                <div class="second-box-header">
+                                                    <img src="images/bank-icon2.png" class="bank-icon-2" alt="bank icon 2"><p>Account Officers</p>
+                                                </div> 
+                                           
+                                            </tr>
+                                        </thead>
+                                        <hr>
+                                        <tbody>
+                                            <tr> 
+                                                <td>Dolapo Folarin</td>
+                                                <td>08149878767</td>
+                                                <td><a href="">Copy email</a></td>
+                                            </tr>
 
-                                
-                                
+                                            <tr>
+                                                <td>Adesina Kolade</td>
+                                                <td>08149878767</td>
+                                                <td><a href="">Copy email</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>    
+
                             </div>
+
                         </div>
 
-                        <div class="col-md-6 right">
-                            <div class="header-content3"> 
-                                <img src="images/clock.svg" alt="" class="clock">
-                                <span class="recent-text ">Recent Transaction History</span>
-                                <hr>  
-                            </div>
-                           
-                            <table class="table table-striped ">
-                                <tbody>
-                                    <tr>
-                                        <tr class="odd-num-row">
-                                        <td class="first-column">Jan 6</td>
-                                        <td class="second-column">Obi Ezeudo</td>
-                                        <td class="third-column">FBN</td>
-                                        <td class="fourth-column">N10,000</td>
-                                        <td><img src="images/red-arrow-icon.png" alt="red-arrow-icon" class="red-arrow-icon"></td>
+
+                        <div class="col-md-7 right-dash-row">
+                           <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <div class="third-box-header">
+                                                <img src="images/clock.svg" alt="refresh icon"><p>Recent Transaction History</p>
+                                            </div>    
+                                        </tr>
+                                    </thead>
+                                    <hr>
+                                    <tbody>
+                                        <tr>
+                                        <td class="first-col">Jan 6</td>
+                                        <td>Obi Ezeudo</td>
+                                        <td>FBN</td>
+                                        <td>N10,000</td>
+                                        <td><img src="images/red-arrow-icon.png" alt="red arrow icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jan 2</td>
+                                            <td>Mark Essien</td>
+                                            <td>GTB</td>
+                                            <td>5,000</td>
+                                            <td><img src="images/green-arrow-icon.png" alt="red arrow icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dec 26</td>
+                                            <td>Obi Amara</td>
+                                            <td>ECO</td>
+                                            <td>N10,000</td>
+                                            <td><img src="images/green-arrow-icon.png" alt="red arrow icon"></td>
+                                        </tr>
+                                        <tr>
+                                            <td>Dec 26</td>
+                                            <td>Cable TV- Dstv Bouquet</td>
+                                            <td></td>
+                                            <td>N10,000</td>
+                                            <td><img src="images/red-arrow-icon.png" alt="red arrow icon"></td>
                                         </tr>
 
-                                        <tr class="even-num-row">
-                                        <td class="first-column">Jan 2</td>
-                                        <td  class="second-column">Mark Essien</td>
-                                        <td class="third-column">GTB</td>
-                                        <td class="fourth-column">N5,000</td>
-                                        <td><img src="images/green-arrow-icon.png" alt="green-arrow-icon" class="green-arrow-icon"></td>
+                                        <tr>
+                                            <td>Dec 6</td>
+                                            <td>Obi Ezeudo</td>
+                                            <td>FBN</td>
+                                            <td>N10,000</td>
+                                            <td><img src="images/red-arrow-icon.png" alt="red arrow icon"></td>
                                         </tr>
-
-                                        <tr class="odd-num-row">
-                                        <td class="first-column">Jan 1</td>
-                                        <td  class="second-column">Cable TV - Dstv Bouquet</td>
-                                        <td ></td>
-                                        <td class="fourth-column">N10,000</td>
-                                        <td><img src="images/red-arrow-icon.png" alt="red-arrow-icon" class="red-arrow-icon"></td>
+                                        <tr>
+                                            <td>Jan 2</td>
+                                            <td>Mark Essien</td>
+                                            <td>GTB</td>
+                                            <td>5,000</td>
+                                            <td><img src="images/red-arrow-icon.png" alt="red arrow icon"></td>
                                         </tr>
+                                      
+                                    </tbody>
+                                </table>
 
-                                        <tr class="even-num-row">
-                                        <td class="first-column">Dec 26</td>
-                                        <td  class="second-column">Obi Amara</td>
-                                        <td class="third-column">ECO</td>
-                                        <td class="fourth-column">N100,000</td>
-                                        <td><img src="images/green-arrow-icon.png" alt="green-arrow-icon" class="green-arrow-icon"></td>
-                                        </tr>
+                            </div> 
 
-                                        <tr class="odd-num-row">
-                                        <td class="first-column">Dec 15</td>
-                                        <td  class="second-column">Betting - SureBet</td>
-                                        <td></td>
-                                        <td class="fourth-column">N10,000</td>
-                                        <td><img src="images/red-arrow-icon.png" alt="red-arrow-icon" class="red-arrow-icon"></td>
-                                        </tr> 
-
-                                        <tr class="even-num-row"> 
-                                        <td class="first-column">Dec 6</td>
-                                        <td  class="second-column">Obi Ezeudo</td>
-                                        <td class="third-column">FBN</td>
-                                        <td class="fourth-column">N10,000</td>
-                                        <td><img src="images/red-arrow-icon.png" alt="red-arrow-icon" class="red-arrow-icon"></td>
-                                        </tr>    
-                                    </tr>
-                                </tbody>
-                            </table>
                         </div>
 
                     </div>
-
                     
                     
 

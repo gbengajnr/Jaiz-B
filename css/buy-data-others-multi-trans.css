@@ -44,7 +44,7 @@ input[type="submit"]{
     font-size: 11px;
     letter-spacing: 0.02em;
     margin-right: 76px;
-   
+    border: none;
 }
 
 input:focus, textarea:focus{
@@ -379,9 +379,9 @@ input:focus, textarea:focus{
 
 .table thead tr th{
     border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 6px !important;
+    padding: 12px !important;
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     color: #08501C;
 }
@@ -396,9 +396,10 @@ input:focus, textarea:focus{
 
 .table tbody tr td{
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: 0.88em;
     font-weight: 500;
     color: #545454;
+    padding: 17px;
 }
 
 .table tbody tr td select{
@@ -463,11 +464,12 @@ input:focus, textarea:focus{
 }
 
 .table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
+    color: #D8A408;
+    font-size: 0.75em;
+    border: 1px solid #D8A408;
     border-radius: 3px;
-    padding: 5px 15px;
+    padding: 5px 25px;
+    font-family: "CircularStd-Book";
 }
 
 .table tbody tr td a:hover{
@@ -484,7 +486,7 @@ input:focus, textarea:focus{
 
 .table-button .add-a-trans{
     background: rgba(210, 165, 14, 0.1);
-    border: 1px solid #D2A50E;
+    border: 1px dashed #D2A50E;
     border-radius: 2px;
     color: #D2A50E;
     padding: 10px 15px;
@@ -501,8 +503,11 @@ input:focus, textarea:focus{
     border: 1px solid #2A9E4A;
     border-radius: 3px;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 40px;
     cursor: pointer;
+    font-family: "CircularStd-Book";
+    letter-spacing: 0.02em;
+    font-size: 0.9em;
 }
 
 

@@ -362,9 +362,9 @@ h4 {
 
 .table thead tr th{
     border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 6px !important;
+    padding: 15px !important;
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: o.8em;
     font-weight: 500;
     color: #08501C;
 }
@@ -379,17 +379,20 @@ h4 {
 
 .table tbody tr td{
     padding-left: 25px !important;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     color: #545454;
+    padding: 20px;
+    letter-spacing: 0.02em;
 }
 
 .table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
+    color: #D8A408;
+    font-size: 0.75em;
+    border: 1px solid #D8A408;
     border-radius: 3px;
-    padding: 5px 15px;
+    padding: 5px 25px;
+    font-family: "CircularStd-Book";
 }
 
 .table tbody tr td a:hover{
@@ -420,6 +423,12 @@ h4 {
     position: absolute;
     top: 70px;
     right: 10px;
+}
+
+.main-page-content .go-to-link-2{
+    position: absolute;
+    top: 90px;
+    right: 10px; 
 }
 
 .pagination .page-link{

@@ -383,11 +383,16 @@ input:focus, textarea:focus{
     padding-left: 30px;
     margin: 0;
     color: #08501C;
-    font-size: 1.125em;
+    font-size: 1.125em;  
 }
 
 .own-account-content hr{
     margin-top: 0px;
+    border: 0.75px solid #D6E9DB;
+}
+
+.form-box hr{
+    margin-top: 18px;
 }
 
 .form-box{
@@ -400,6 +405,7 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
     text-align: center;
     font-size: 1.25em;
+    font-weight: 500;
 }
 
 .form-box .row{
@@ -409,13 +415,15 @@ input:focus, textarea:focus{
 }
 
 .form-box .send-receive-text{
-    color: #333333;
+    color: #545454;
     margin-bottom: 8px;
-    font-size: 1em;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: 500;
 }
 .form-box .jaiz-account-text{
-    color: #545454;
-    font-size: 1em;
+    color: #333333;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: 500;
 }
 
 .form-box .amount-div{
@@ -489,7 +497,9 @@ form .btn-submit{
     color: #FFFFFF;
     font-weight: 500;
     margin-bottom: 60px;
+    letter-spacing: 0.02em;
     cursor: pointer;
+    font-family: "CircularStd-Book";
 }
 
 .modal .modal-header .modal-title{
@@ -503,8 +513,8 @@ form .btn-submit{
 .modal .modal-body{
     margin: 0;
     text-align: center;
-    padding: 50px 0px;
-    letter-spacing: 0.02em;
+    padding: 60px 0px;
+    font-weight: 600;
 }
 
 .modal#exampleModalCenter2 .modal-body p{
@@ -514,7 +524,7 @@ form .btn-submit{
 
 .modal .modal-body img{
     width: 50px;
-    margin-top: -5px;
+    margin-top: 8px;
     margin-bottom: 30px;
 }
 

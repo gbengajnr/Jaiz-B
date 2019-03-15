@@ -157,7 +157,13 @@ body{
 
 .form-group label{
     color: #333333;
-    font-weight: bold;
+    font-family: "CircularStd-Book";
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.form-group .form-control{
+    font-size: 0.85em;
 }
 
 .form-group span a{

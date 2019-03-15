@@ -437,11 +437,12 @@ input:focus, textarea:focus{
 }
 
 .table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
+    color: #D8A408;
+    font-size: 0.75em;
+    border: 1px solid #D8A408;
     border-radius: 3px;
-    padding: 5px 15px;
+    padding: 5px 25px;
+    font-family: "CircularStd-Book";
 }
 
 .table tbody tr td a:hover{

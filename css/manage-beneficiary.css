@@ -351,6 +351,11 @@ h4 {
     display: flex;
 }
 
+.search-div .form-control{
+    font-size: 0.89em !important;
+    color: #828282 !important;
+}
+
 #mySearch {
     background: #FFFFFF;
     border: 1px solid #E0E0E0 !important;
@@ -409,12 +414,13 @@ h4 {
 }
 
 .table thead tr th{
-    border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 8px 0px !important;
+   border-bottom: 0.75px solid #D6E9DB !important;
+    padding: 17px !important;
     padding-left: 12.5px !important;
-    font-size: 1em;
+    font-size: 0.9em;
     font-weight: 500;
     color: #08501C;
+    font-family: "CircularStd-Book";
 }
 
 .table thead tr th.first-th{
@@ -426,9 +432,12 @@ h4 {
 }
 
 .table tbody tr td{
-    padding-top: 23px;
-    font-weight: 500;
+    padding-left: 12.5px !important;
+    padding: 20px;
+    font-size: 0.89em;
     color: #545454;
+    font-family: "CircularStd-Book";
+    font-weight: 500;
 }
 
 .circle{ 
@@ -477,12 +486,13 @@ h4 {
 }
 
 .table tbody tr td a.send-money{
-    color: #2A9E4A;
+    color: #D8A408;
     font-size: 0.9em;
-    border: 1px solid #2A9E4A;
+    border: 1px solid #D8A408;
     border-radius: 3px;
     padding: 10px 15px;
 }
+
 .table tbody tr td a.send-money:hover{
     text-decoration: none;
     color: #545454;
@@ -495,7 +505,9 @@ h4 {
     font-weight: 500;
     border-radius: 3px;
     margin-top: -10px;
+    font-family: "CircularStd-Book";
 }
+
 .table tbody tr td a.edit:hover{
     text-decoration: none;
     color: #545454;

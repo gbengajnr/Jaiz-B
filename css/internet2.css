@@ -12,7 +12,7 @@
 body {
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-size: .875rem;
-    background: #F7F8FA;
+    background: #F2FAF4;
 }
 
 
@@ -364,6 +364,11 @@ input:focus, textarea:focus{
     margin-top: 44px;
 }
 
+.main-page-content h4{
+    color: #333333;
+    font-size: 1.9em;
+}
+
 .main-page-content .go-to-link{
     position: absolute;
     top: 70px;
@@ -384,10 +389,15 @@ input:focus, textarea:focus{
     padding-left: 30px;
     margin: 0;
     color: #08501C;
+    font-size: 1.125em;  
 }
 
 .own-account-content hr{
     margin-top: 0px;
+}
+
+.form-box hr{
+    margin-top: 18px;
 }
 
 .form-box{
@@ -399,7 +409,8 @@ input:focus, textarea:focus{
 .form-box h6{
     color: #2A9E4A !important;
     text-align: center;
-    font-weight: 600;
+    font-size: 1.25em;
+    font-weight: 500;
 }
 
 .form-box .row{
@@ -409,12 +420,15 @@ input:focus, textarea:focus{
 }
 
 .form-box .send-receive-text{
-    color: #333333;
+    color: #545454;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: 500;
 }
 .form-box .jaiz-account-text{
-    color: #545454;
+    color: #333333;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: 500;
 }
 
 .form-box .amount-div{
@@ -426,8 +440,10 @@ input:focus, textarea:focus{
 
 .form-box .enter-your-digits{
     text-align: center;
-    font-weight: 600;
+    font-weight: 500;
     color: #333333;
+    font-family: "CircularStd-Book";
+    letter-spacing: 0.02em;
 }
 
 .form-box .veri-field{
@@ -488,7 +504,9 @@ form .btn-submit{
     color: #FFFFFF;
     font-weight: 500;
     margin-bottom: 60px;
+    letter-spacing: 0.02em;
     cursor: pointer;
+    font-family: "CircularStd-Book";
 }
 
 .modal .modal-header .modal-title{
@@ -501,7 +519,7 @@ form .btn-submit{
 .modal .modal-body{
     margin: 0;
     text-align: center;
-    padding: 50px 0px;
+    padding: 60px 0px;
     font-weight: 600;
 }
 
@@ -512,7 +530,7 @@ form .btn-submit{
 
 .modal .modal-body img{
     width: 50px;
-    margin-top: -5px;
+    margin-top: 8px;
     margin-bottom: 30px;
 }
 

@@ -12,7 +12,7 @@
 body {
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-size: .875rem;
-    background: #F2FAF4;
+    background: #F7FAF4;
 }
 
 
@@ -44,7 +44,8 @@ input[type="submit"]{
     font-size: 0.9em;
     letter-spacing: 0.02em;
     margin-right: 76px;
-    border: none; 
+    border: none;
+    
 }
 
 input:focus, textarea:focus{
@@ -233,10 +234,8 @@ input:focus, textarea:focus{
     padding: 10px 5px 10px 25px !important;
 }
 
-.accordion a.act{
+.accordion .card-body a.act{
     font-weight: bold;
-    color: #2A9E4A !important;
-
 }
 
 .sidenav .utilities{
@@ -353,14 +352,18 @@ input:focus, textarea:focus{
     padding-top: 60px;
     padding-left: 20px;
     padding-right: 10px;
+    background: #F2FAF4;
 }
 
 .main-page-content{
     margin: 0 auto;
     width: 85%;
-    margin-top: 34px;
-    margin-bottom: 160px;
- 
+    margin-top: 44px;
+}
+
+.main-page-content h4 {
+    color: #333333;
+    font-size: 1.9em;
 }
 
 .go-to-link{
@@ -374,7 +377,7 @@ input:focus, textarea:focus{
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
     border-radius: 7px;
     margin-top: 15px;
-    margin-bottom: 110px;
+    margin-bottom: 40px;
 }
 
 .own-account-content .title{
@@ -383,23 +386,23 @@ input:focus, textarea:focus{
     padding-left: 30px;
     margin: 0;
     color: #08501C;
+    font-size: 1.15em;
 }
 
 .own-account-content hr{
     margin-top: 0px;
+    border: 0.75px solid #D6E9DB;
 }
 
 .form-box{
     margin: 0 auto;
     width: 40%;
-    margin-top: 20px;
-   
+    margin-top: 40px;
 }
 
 .form-group label{
     color: #333333 !important;
-    font-weight: 600;
-   
+    font-weight: 500;
 }
 
 .form-group select, .form-group input{
@@ -408,114 +411,50 @@ input:focus, textarea:focus{
     font-size: 1em;
 }
 .form-group input{
-    width: 105%;
-    
-   
+    width: 90%;
 }
 
-.form-group{
-    margin: 10px auto;
-    
-
+.form-group .form-control {
+    color: #828282 !important;
+    font-size: 0.95em;
+    letter-spacing: 0.02em;
+    padding-left: 20px;
 }
-
 .container {
     padding: 0;
 }
 .container .form-group .network{
-    width: 100%;
-}
-.lock-icon{
-    position: relative;
-    bottom: 30px;
-    left: 170px;
+    width: 120%;
 }
 
 .container{
     display: inline-flex;
 }
 
+
 .form-group option.light-option{
-    color: rgba(130, 130, 130, 0.8);
-    
+    color: #828282 !important;
 }
 
 .form-group option{
-    color: #545454;
-
-    
+    color: #828282 !important;
 }
 
+
+
 form .btn-submit{
-    margin-top: 10px;
+    margin-top: 30px;
     background: #2A9E4A;
     border-radius: 3px;
     border: none;
     width: 100%;
-    padding: 14px;
+    padding: 15px;
     color: #FFFFFF;
     font-weight: 500;
-    margin-bottom: 60px ;
+    margin-bottom: 250px;
     cursor: pointer;
+    font-family: "CircularStd-Book";
 }
-
-.lower-table{
-    
-}
-
-
-.recent-trans-text{
-    font-size: 1.2em;
-}
-
-.table-responsive{
-    background: #FFFFFF;
-    box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
-    border-radius: 7px;
-    margin-top: -5px;
-    margin-bottom: 0px;
-}
-
-.table{
-    margin-bottom: 0px;
-    
-}
-
-.table thead tr th{
-    border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 5px !important;
-    padding-left: 25px !important;
-    font-size: 0.85em;
-    font-weight: 600;
-}
-
-.table thead tr th.hidden-col{
-    color: #fff;
-}
-
-.table tbody tr.stripped{
-    background: #FAFAFA;
-}
-
-.table tbody tr td{
-    padding-left: 25px !important;
-    font-size: 0.9em;
-}
-
-.table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
-    border-radius: 3px;
-    padding: 5px 15px;
-}
-
-.table tbody tr td a:hover{
-    text-decoration: none;
-    color: #545454;
-    border: 1px solid #545454;
-}
-
 
 
 /*Main Page Ends Here*/

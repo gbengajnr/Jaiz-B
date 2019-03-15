@@ -370,6 +370,12 @@ input:focus, textarea:focus{
     right: 10px;
 }
 
+.main-page-content .go-to-link-2{
+    position: absolute;
+    top: 90px;
+    right: 10px; 
+}
+
 .own-account-content{
     background: #FFFFFF;
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
@@ -389,6 +395,7 @@ input:focus, textarea:focus{
 
 .own-account-content hr{
     margin-top: 0px;
+    border: 0.75px solid #D6E9DB;
 }
 
 .form-box{
@@ -424,12 +431,22 @@ input:focus, textarea:focus{
     color: #545454;
 }
 
+.input-group-append, .input-group-text{
+    background: #F2FDF5;
+    border: none;
+    border-radius: 3px;
+}
+
+.input-group-text i{
+    color: #CCCFD4;
+}
+
 .third-sec{
     display: flex;
 }
 
 form .btn-submit{
-    margin-top: 30px;
+    margin-top: 15px;
     background: #2A9E4A;
     border-radius: 3px;
     border: none;
@@ -437,7 +454,7 @@ form .btn-submit{
     padding: 15px;
     color: #FFFFFF;
     font-weight: 500;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     cursor: pointer;
 }
 
@@ -476,12 +493,12 @@ form .btn-submit{
 
 .table thead tr th{
     border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 6px !important;
+    padding: 17px !important;
     padding-left: 25px !important;
     font-size: 0.8125em;
-    font-family: "CircularStd-Book";
+    font-weight: 500;
     color: #08501C;
-    font-weight: lighter;
+    font-family: "CircularStd-Book";
 }
 
 .table thead tr th.hidden-col{
@@ -494,17 +511,19 @@ form .btn-submit{
 
 .table tbody tr td{
     padding-left: 25px !important;
+    padding: 20px;
     font-size: 0.8125em;
-    font-family: "CircularStd-Book";
     color: #545454;
+    font-family: "CircularStd-Book";
 }
 
 .table tbody tr td a{
-    color: #2A9E4A;
-    font-size: 0.85em;
-    border: 1px solid #2A9E4A;
+    color: #D8A408;
+    font-size: 0.75em;
+    border: 1px solid #D8A408;
     border-radius: 3px;
-    padding: 5px 15px;
+    padding: 5px 25px;
+    font-family: "CircularStd-Book";
 }
 
 .table tbody tr td a:hover{

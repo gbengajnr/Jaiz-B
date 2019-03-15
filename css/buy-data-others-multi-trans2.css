@@ -12,7 +12,7 @@
 body {
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-size: .875rem;
-    background: #F2FAF4;
+    background: #F2F4FA;
 }
 
 
@@ -41,10 +41,10 @@ input[type="submit"]{
     font-family: "CircularStd-Book";
     padding: 10px 15px 9px 15px;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 11px;
     letter-spacing: 0.02em;
     margin-right: 76px;
-    border: none; 
+    border: none;
 }
 
 input:focus, textarea:focus{
@@ -233,9 +233,8 @@ input:focus, textarea:focus{
     padding: 10px 5px 10px 25px !important;
 }
 
-.accordion  a.act{
+.accordion .card-body a.act{
     font-weight: bold;
-    color: #2A9E4A !important;
 }
 
 .sidenav .utilities{
@@ -360,11 +359,6 @@ input:focus, textarea:focus{
     margin-top: 44px;
 }
 
-.main-page-content h4{
-    color: #333333;
-    font-size: 1.9em;
-}
-
 .main-page-content .go-to-link{
     position: absolute;
     top: 70px;
@@ -390,15 +384,16 @@ input:focus, textarea:focus{
 
 .own-account-content hr{
     margin-top: 0px;
+    border: 0.75px solid #D6E9DB;
 }
 
 .form-box hr{
-    margin-top: 18px;
+    margin-top: -10px;
 }
 
 .form-box{
     margin: 0 auto;
-    width: 60%;
+    width: 80%;
     margin-top: 40px;
 }
 
@@ -411,8 +406,7 @@ input:focus, textarea:focus{
 
 .form-box .row{
     margin: 0 auto;
-    width: 90%;
-    padding-left: 62px;
+    width: 100%;
 }
 
 .form-box .send-receive-text{
@@ -429,14 +423,6 @@ input:focus, textarea:focus{
     font-size: 1em;
 }
 
-
-.form-box .amount-div{
-    margin: 0 auto;
-    margin-top: 20px;
-    width: 60%;
-    padding-left: 0px;
-}
-
 .form-box .enter-your-digits{
     text-align: center;
     font-weight: 500;
@@ -448,7 +434,6 @@ input:focus, textarea:focus{
 .form-box .veri-field{
     cursor: default;
     margin: 0 auto;
-    width: 100%;
     margin-top: 30px;
     margin-left: 9.2em;
 }
@@ -549,18 +534,17 @@ form .btn-submit{
     padding: 12px;
     cursor: pointer;
     width: 30%;
-    margin-right: 15%;
+    margin-right: 10%;
 }
 
 .modal .modal-footer .exit-btn{
     background: #2A9E4A;
-    border: 1.2px solid #2A9E4A;
+    border: 1.5px solid #2A9E4A;
     color: #FFFFFF;
     border-radius: 3px;
-    padding: 10px;
+    padding: 12px;
     cursor: pointer;
     width: 30%;
-    text-decoration: none;
 }
 
 /*Main Page Ends Here*/
@@ -572,11 +556,11 @@ form .btn-submit{
 @media screen and (min-width: 2500px){
 
     .form-box .row{
-        margin-left: 16%;
+        margin-left: 5%;
     }
 
     .form-box .veri-field{
-        margin-left: 38.5%;
+        margin-left: 41.5%;
     }
 
 }
@@ -584,11 +568,11 @@ form .btn-submit{
 @media screen and (max-width: 2500px){
 
     .form-box .row{
-        margin-left: 16%;
+        margin-left: 5%;
     }
 
     .form-box .veri-field{
-        margin-left: 38.5%;
+        margin-left: 41.5%;
     }
 
 }
@@ -596,7 +580,7 @@ form .btn-submit{
 @media screen and (max-width: 2384px){
 
     .form-box .veri-field{
-        margin-left: 38%;
+        margin-left: 41%;
     }
 
 }
@@ -604,7 +588,7 @@ form .btn-submit{
 @media screen and (max-width: 2200px){
 
     .form-box .veri-field{
-        margin-left: 37%;
+        margin-left: 40%;
     }
 
 }
@@ -612,7 +596,7 @@ form .btn-submit{
 @media screen and (max-width: 2044px){
 
     .form-box .veri-field{
-        margin-left: 35.5%;
+        margin-left: 38.5%;
     }
 
 }
@@ -620,7 +604,43 @@ form .btn-submit{
 @media screen and (max-width: 1850px){
 
     .form-box .row{
-        margin-left: 11%;
+        margin-left: 3%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 1688px){
+
+    .form-box .veri-field{
+        margin-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 1550px){
+
+    .form-box .veri-field{
+        margin-left: 36%;
+    }
+
+}
+
+@media screen and (max-width: 1441px){
+
+    .form-box .veri-field{
+        margin-left: 34.5%;
+    }
+
+}
+
+@media screen and (max-width: 1405px){
+
+    .form-box .row{
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
@@ -629,46 +649,15 @@ form .btn-submit{
 
 }
 
-@media screen and (max-width: 1688px){
-
-    .form-box .veri-field{
-        margin-left: 32%;
-    }
-
-}
-
-@media screen and (max-width: 1550px){
-
-    .form-box .row{
-        margin-left: 9%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 30%;
-    }
-
-}
-
-@media screen and (max-width: 1405px){
-
-    .form-box .row{
-        margin-left: 6%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 28%;
-    }
-
-}
-
 @media screen and (max-width: 1300px){
 
     .form-box .row{
-        margin-left: 3%;
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
-        margin-left: 26%;
+        width: 80%;
+        margin-left: 32%;
     }
 
 }
@@ -680,7 +669,7 @@ form .btn-submit{
     }
 
     .form-box .veri-field{
-        margin-left: 24%;
+        margin-left: 30%;
     }
 
 }
@@ -692,7 +681,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: 3%;
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
@@ -825,7 +814,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -2%;
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
@@ -837,7 +826,7 @@ form .btn-submit{
 @media screen and (max-width: 680px){
 
     .form-box .row{
-        margin-left: -5%;
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
@@ -853,7 +842,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -10%;
+        margin-left: 0%;
     }
 
     .form-box .veri-field{
@@ -931,10 +920,6 @@ form .btn-submit{
 
 @media screen and (max-width: 390px){
 
-    .form-box .row{
-        margin-left: -20%;
-    }
-
     .form-box .veri-field{
         margin-left: 5%;
     }
@@ -942,10 +927,6 @@ form .btn-submit{
 }
 
 @media screen and (max-width: 368px){
-
-    .form-box .row{
-        margin-left: -25%;
-    }
 
     .form-box .veri-field{
         margin-left: 9%;
@@ -989,7 +970,7 @@ form .btn-submit{
     }
 
     .form-box .row{
-        margin-left: -25%;
+        margin-left: 1%;
     }
 
     .form-box .veri-field{
