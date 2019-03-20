@@ -19,7 +19,7 @@ body {
 /* Navbar Starts Here */
 
 .navbar{
-    padding: 2px 20px;
+    padding: 8px 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
 }
@@ -31,25 +31,40 @@ body {
     font-weight: bold;
     letter-spacing: -1.6875px;
     color: #1875F0;
-    padding-left: 20px;
+    padding-left: 35px;
+}
+
+.navbar .mr-right img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 116px;
+    top: 22px;
+    cursor: pointer;
 }
 
 input[type="submit"]{
     background: #2A9E4A;
-    border-radius: 25px;
+    border-radius: 60px;
     color: #FFFFFF;
     font-family: "CircularStd-Book";
-    padding: 10px 15px 9px 15px;
+    padding: 12px 40px 10px 18px;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8125em;
     letter-spacing: 0.02em;
-    margin-right: 76px;
-    border: none; 
+    margin-right: 82px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, textarea:hover{
+   
 }
 
 input:focus, textarea:focus{
     outline: none;
 }
+
 
 /* Navbar Ends Here */
 
@@ -95,7 +110,7 @@ input:focus, textarea:focus{
 
 .sidenav {
     height: 100%;
-    width: 230px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -129,54 +144,44 @@ input:focus, textarea:focus{
     display: none;
 }
 
-.carousel{
+.account-div{
     width: 100%;
 }
 
-.carousel-item{
+.account-div{
     padding-left: 25px;
 }
 
-.carousel-item .account-num{
+.account-div .account-num{
     color: #8D948F;
     margin-bottom: 5px;
 }
 
-.carousel-item .account-bal{
+.account-div .check-balance-link{
+    margin-left: -27px;
+}
+
+.account-div .check-balance-link:hover i{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.account-div .account-bal{
     color: #2A9E4A;
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-bottom: 0px;
 }
 
-.carousel-item .acc-bal-text{
-    margin-bottom: 45px;
-    color: rgba(130, 130, 130, 0.6);
+.account-div .account-bal i{
+    font-size: 0.8em;
+    margin-left: 15px;
+    margin-top: 1px;
 }
 
-.carousel-control-prev, .carousel-control-prev .fas{
-    display: none;
-}
-
-.carousel-control-next .fas{
-    margin-left: -75px;
-    margin-top: 26px;
-    font-size: 1.4em;
-    color:#2A9E4A;
-}
-
-.carousel-indicators{
-    margin-left: -124px;
-    margin-bottom: 10px;
-}
-
-.carousel-indicators li{
-    background: rgba(42, 158, 74, 0.3);
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-}
-.carousel-indicators li.active{
-    background: #2A9E4A;
+.account-div .account-bal i:hover{
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .sidenav hr{
@@ -199,17 +204,22 @@ input:focus, textarea:focus{
 }
 
 .sidenav a.active{
-    background: rgb(24,117,240, 0.1);
-    border-left: 4px solid #1875F0;
+    background: rgba(42, 158, 74, 0.15) !important;
+    border-left: 3px solid #2A9E4A;
     padding: 10px 30px 10px 10px ;
 }
-.sidenav a.active:hover{
-    padding: 10px 30px 10px 10px;
+
+.sidenav a.card-body:hover{
+    background: rgba(42, 158, 74, 0.15) !important;
 }
-.sidenav a:hover{
-    transition: all 0.3s ease-in-out;
+
+.sidenav .hover:hover{
+    transition: all 0.1s ease-in-out;
     padding: 10px 5px 10px 30px !important;
-    font-weight: bold;
+    background: #F4FAF6 !important;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 5px 10px 25px !important;
+    margin-right: 20px;
 }
 
 .accordion .card-body{
@@ -228,13 +238,15 @@ input:focus, textarea:focus{
     margin-left: 2px;
 }
 
-.accordion .card-body a:hover{
-    background: none;
-    padding: 10px 5px 10px 25px !important;
+
+.accordion .card-body a.act{
+    font-weight: bold;
 }
 
-.accordion  a.act{
-    font-weight: bold;
+.accordion .act{
+    border-radius: 0px 30px 30px 0px;
+    padding: 8px 5px 8px 25px !important;
+    margin-right: 20px;
     color: #2A9E4A !important;
 }
 
@@ -379,18 +391,114 @@ input:focus, textarea:focus{
     margin-bottom: 40px;
 }
 
+.modal .modal-title{
+    font-family: "CircularStd-Book";
+    font-size: 1.125em;
+    letter-spacing: 0.06em;
+    color: #42624B;
+}
+
+.main .main-page-content .modal{
+    margin-top: -140px;
+}
+
+.main .modal-body{
+    margin: 0;
+    padding: 0;
+}
+
+.main .modal-body .carousel{
+    margin-top: -30px;
+    margin-bottom: -90px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-type{
+    font-family: "CircularStd-Book";
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-num{
+    font-family: "CircularStd-Book";
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #828282;
+    font-weight: 100;
+    margin-left: -70px;
+    margin-bottom: 4px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-bal{
+    font-family: "CircularStd-Book";
+    font-size: 1.375em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #333333;
+    font-weight: bold;
+    margin-left: -58px;
+}
+
+.main .modal-body .carousel .carousel-indicators{
+    position: absolute;
+    top: 120px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel .carousel-indicators li{
+    background: rgba(42, 158, 74, 0.2);
+}
+
+.main .modal-body .carousel .carousel-indicators li.active{
+    background: #2A9E4A;
+}
+
+.main .modal-body .carousel .carousel-inner{
+    margin-bottom: 100px;
+}
+
+.main .modal-body .carousel .carousel-control-prev i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+}
+
+.main .modal-body .carousel .carousel-control-next i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+    margin-left: -30px;
+}
+
+
 .own-account-content .title{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     padding-left: 30px;
     margin: 0;
-    color: #08501C;
-    font-size: 1.125em;  
-}
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    background: #D8A408;
+    color: #FFFFFF;
+    width: 25%;
+    -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 0 100%);
+    clip-path: polygon(0 0, 97% 0, 89% 100%, 0 100%);
+    border-radius: 7px 0;
+    font-weight: 600;
+} 
 
 .own-account-content hr{
     margin-top: 0px;
+    border: 0.5px solid #F7EFD8;
 }
+
 
 .form-box hr{
     margin-top: 18px;
@@ -415,6 +523,10 @@ input:focus, textarea:focus{
     padding-left: 62px;
 }
 
+.form-box .send{
+    margin-bottom: 20px;
+}
+
 .form-box .send-receive-text{
     color: #545454;
     margin-bottom: 8px;
@@ -422,13 +534,14 @@ input:focus, textarea:focus{
     font-weight: 500;
     font-size: 0.9em;
 }
+
 .form-box .jaiz-account-text{
     color: #333333;
     font-family: "CircularStd-Book", Arial, sans-serif;
-    font-weight: 500;
-    font-size: 1em;
+    font-weight: bold;
+   font-size: 1em;
+   margin-top: -5px;
 }
-
 
 .form-box .amount-div{
     margin: 0 auto;
@@ -525,6 +638,9 @@ form .btn-submit{
 .modal#exampleModalCenter2 .modal-body p{
     margin-bottom: 50px;
     font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #42624B;
+    font-size: 1.135em;
 }
 
 .modal .modal-body img{
@@ -569,186 +685,38 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (min-width: 2500px){
-
-    .form-box .row{
-        margin-left: 16%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 38.5%;
-    }
-
-}
-
-@media screen and (max-width: 2500px){
-
-    .form-box .row{
-        margin-left: 16%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 38.5%;
-    }
-
-}
-
-@media screen and (max-width: 2384px){
-
-    .form-box .veri-field{
-        margin-left: 38%;
-    }
-
-}
-
-@media screen and (max-width: 2200px){
-
-    .form-box .veri-field{
-        margin-left: 37%;
-    }
-
-}
-
-@media screen and (max-width: 2044px){
-
-    .form-box .veri-field{
-        margin-left: 35.5%;
-    }
-
-}
-
-@media screen and (max-width: 1850px){
-
-    .form-box .row{
-        margin-left: 11%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 34%;
-    }
-
-}
-
-@media screen and (max-width: 1688px){
-
-    .form-box .veri-field{
-        margin-left: 32%;
-    }
-
-}
-
-@media screen and (max-width: 1550px){
-
-    .form-box .row{
-        margin-left: 9%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 30%;
-    }
-
-}
-
-@media screen and (max-width: 1405px){
-
-    .form-box .row{
-        margin-left: 6%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 28%;
-    }
-
-}
-
-@media screen and (max-width: 1300px){
-
-    .form-box .row{
-        margin-left: 3%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 26%;
-    }
-
-}
-
-@media screen and (max-width: 1188px){
-
-    .form-box .row{
-        margin-left: 0%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 24%;
-    }
-
-}
-
-@media screen and (max-width: 1112px){
+@media screen and (max-width: 1040px){
 
     .form-box{
-        width: 80%;
+        width: 70%;
     }
 
-    .form-box .row{
-        margin-left: 3%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 28%;
+    .table{
+        width: 110%;
     }
 
 }
 
-@media screen and (max-width: 1008px){
+@media screen and (max-width: 969px){
 
-    .form-box .row{
-        margin-left: 0%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 25%;
+    .table{
+        width: 130%;
     }
 
 }
 
-@media screen and (max-width: 920px){
+@media screen and (max-width: 858px){
 
-    .form-box .row{
-        margin-left: 0%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 21%;
-    }
-
-    .modal{
-        margin-left: 0px;
+    .table{
+        width: 150%;
     }
 
 }
 
-@media screen and (max-width: 848px){
+@media screen and (max-width: 777px){
 
-    .form-box .row{
-        margin-left: 0%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 17%;
-    }
-
-}
-
-@media screen and (max-width: 780px){
-
-    .form-box .row{
-        margin-left: 0%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 14%;
+    .table{
+        width: 160%;
     }
 
 }
@@ -824,186 +792,88 @@ form .btn-submit{
         width: 100%;
     }
 
-    .form-box .row{
-        margin-left: -2%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 24%;
+    .table{
+        width: 110%;
     }
 
 }
 
-@media screen and (max-width: 680px){
+@media screen and (max-width: 749px){
 
-    .form-box .row{
-        margin-left: -5%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 20%;
+    .table{
+        width: 130%;
     }
 
 }
 
-@media screen and (max-width: 608px){
+@media screen and (max-width: 638px){
+
+    .table{
+        width: 150%;
+    }
+
+}
+
+@media screen and (max-width: 557px){
 
     .form-box{
-        width: 90%;
+        width: 85%;
     }
 
-    .form-box .row{
-        margin-left: -10%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 24%;
+    .table{
+        width: 170%;
     }
 
 }
 
-@media screen and (max-width: 575px){
-
-    .modal{
-        width: 90%;
-        margin-left: 25px;
-    }
-
-}
-
-@media screen and (max-width: 560px){
+@media screen and (max-width: 495px){
 
     .main-page-content{
-        width: 90% !important;
-    }
-
-    .form-box{
-        width: 90% !important;
-    }
-
-    .form-box .veri-field{
-        margin-left: 20%;
-    }
-
-    .modal .modal-footer{
-        width: 95%;
-        margin-left: -10px;
-    }
-    
-    .modal .modal-footer .cancel-btn{
-        width: 40%;
-    }
-    
-    .modal .modal-footer .exit-btn{
-        width: 40%;
-    }
-
-}
-
-@media screen and (max-width: 492px){
-
-    .form-box .veri-field{
-        margin-left: 15%;
-    }
-
-}
-
-@media screen and (max-width: 436px){
-
-    .form-box .veri-field{
-        margin-left: 10%;
-    }
-
-}
-
-@media screen and (max-width: 404px){
-
-    .modal{
-        margin-left: 15px !important;
-    }
-
-    .modal-body{
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-    }
-
-}
-
-@media screen and (max-width: 390px){
-
-    .form-box .row{
-        margin-left: -20%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 5%;
-    }
-
-}
-
-@media screen and (max-width: 368px){
-
-    .form-box .row{
-        margin-left: -25%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 9%;
-    }
-
-    .form-box input.verify {
-        width: 45px;
-        height: 45px;
-        font-size: 1em;
-        margin-right: 10px;
-    }
-
-    .form-box form .buttons{
-        width: 90%;
-        display: block;
-    }
-
-    form .btn-back{
-        width: 100%;
-        margin-bottom: 30px;
-    }
-    
-    form .btn-submit{
         width: 100%;
     }
 
 }
 
-@media screen and (max-width: 344px){
+@media screen and (max-width: 425px){
 
-    .form-box .veri-field{
-        margin-left: 5%;
+    .table{
+        width: 190%;
     }
 
 }
 
-@media screen and (max-width: 320px){
+@media screen and (max-width: 383px){
 
-    .main-page-content{
-        width: 98% !important;
+    .table{
+        width: 190%;
     }
 
-    .form-box .row{
-        margin-left: -25%;
-    }
-
-    .form-box .veri-field{
-        margin-left: 5%;
+    .table tbody tr td{
+        padding-left: 25px !important;
+        font-size: 0.8em;
     }
 
 }
 
-@media screen and (max-width: 305px){
+@media screen and (max-width: 356px){
 
-    .form-box .veri-field{
-        margin-left: 3%;
+    .table{
+        width: 200%;
     }
+}
 
+@media screen and (max-width: 340px){
+
+    .table{
+        width: 220%;
+    }
+}
+
+@media screen and (max-width: 312px){
+
+    .table{
+        width: 230%;
+    }
 }
 
 /* Responsive Page Ends Here*/

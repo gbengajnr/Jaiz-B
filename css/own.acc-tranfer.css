@@ -109,7 +109,7 @@ input:focus, textarea:focus{
 
 .sidenav {
     height: 100%;
-    width: 230px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -143,34 +143,44 @@ input:focus, textarea:focus{
     display: none;
 }
 
-.carousel{
+.account-div{
     width: 100%;
 }
 
-.carousel-item{
+.account-div{
     padding-left: 25px;
 }
 
-.carousel-item .account-num{
+.account-div .account-num{
     color: #8D948F;
     margin-bottom: 5px;
 }
 
-.carousel-item .account-bal{
+.account-div .check-balance-link{
+    margin-left: -27px;
+}
+
+.account-div .check-balance-link:hover i{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.account-div .account-bal{
     color: #2A9E4A;
     font-size: 1.4em;
     margin-bottom: 0px;
 }
 
-.carousel-item .account-bal i{
+.account-div .account-bal i{
     font-size: 0.8em;
     margin-left: 15px;
     margin-top: 1px;
 }
 
-.carousel-item .account-bal i:hover{
+.account-div .account-bal i:hover{
     transition: all 0.3s ease-in-out;
     margin-left: 20px;
+    cursor: pointer;
 }
 
 .sidenav hr{
@@ -373,6 +383,93 @@ input:focus, textarea:focus{
     top: 70px;
     right: 10px;
 }
+
+.modal .modal-title{
+    font-family: "CircularStd-Book";
+    font-size: 1.125em;
+    letter-spacing: 0.06em;
+    color: #42624B;
+}
+
+.main .main-page-content .modal{
+    margin-top: -140px;
+}
+
+.main .modal-body{
+    margin: 0;
+    padding: 0;
+}
+
+.main .modal-body .carousel{
+    margin-top: 25px;
+    margin-bottom: -30px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-type{
+    font-family: "CircularStd-Book";
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-num{
+    font-family: "CircularStd-Book";
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #828282;
+    font-weight: 100;
+    margin-left: -70px;
+    margin-bottom: 4px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-bal{
+    font-family: "CircularStd-Book";
+    font-size: 1.375em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #333333;
+    font-weight: bold;
+    margin-left: -58px;
+}
+
+.main .modal-body .carousel .carousel-indicators{
+    position: absolute;
+    top: 120px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel .carousel-indicators li{
+    background: rgba(42, 158, 74, 0.2);
+}
+
+.main .modal-body .carousel .carousel-indicators li.active{
+    background: #2A9E4A;
+}
+
+.main .modal-body .carousel .carousel-inner{
+    margin-bottom: 100px;
+}
+
+.main .modal-body .carousel .carousel-control-prev i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+}
+
+.main .modal-body .carousel .carousel-control-next i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+    margin-left: -30px;
+}
+
 
 .own-account-content{
     background: #FFFFFF;

@@ -56,14 +56,12 @@
             <!-- Click on x in mobile view to close the sidenav -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="account-num">2 Accounts</p>
-                        <p class="account-bal">Check Balance<i class="fas fa-chevron-right"></i></p>
-                        <br>
-                    </div>
-                </div>
+            <div class="account-div">
+                <p class="account-num">2 Accounts</p>
+
+                <!-- Button trigger modal -->
+                <a href="" class="check-balance-link" data-toggle="modal" data-target="#exampleModalCenter"><p class="account-bal">Check Balance<i class="fas fa-chevron-right"></i></p></a>
+                <br/>
             </div>
 
             <hr>
@@ -97,7 +95,7 @@
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
-                        <a href="own-acc-transfer.html" >Own Account Transfer</a>
+                        <a href="own.acc-tranfer.html" >Own Account Transfer</a>
                         <a href="to-jaiz-acc.html">To Jaiz Account</a>
                         <a href="to-other-banks.html">To other Banks</a>
                         <a href="to-beneficiary.html">To Beneficiary</a>
@@ -143,6 +141,48 @@
                 <div id="overlay"></div>
                 
                 <div class="main-page-content">
+
+                    <!-- Go-Back Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLongTitle">Account Balance</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <p class="account-type">Jaiz Savings Account</p>
+                                                <p class="account-num">0199878767</p>
+                                                <p class="account-bal">N23,000</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p class="account-type">Jaiz Savings Account</p>
+                                                <p class="account-num">0199878767</p>
+                                                <p class="account-bal">N23,000</p>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
                     <h4>Buy Data</h4><a href="buy-data-self2.html" class="go-to-link">To 2nd page</a>
                     <div class="own-account-content">
@@ -217,7 +257,7 @@
     
                                     <button type="submit" class="btn-submit">PROCEED</button>
     
-                                    <button type="submit" class="add-a-transaction"><i class="fas fa-plus"></i> Add A Transaction</button>
+                                   
                                 </form>
                         </div>
                     </div>

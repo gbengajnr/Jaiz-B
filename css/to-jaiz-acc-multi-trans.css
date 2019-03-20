@@ -19,7 +19,7 @@ body {
 /* Navbar Starts Here */
 
 .navbar{
-    padding: 2px 20px;
+    padding: 8px 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
 }
@@ -31,20 +31,34 @@ body {
     font-weight: bold;
     letter-spacing: -1.6875px;
     color: #1875F0;
-    padding-left: 20px;
+    padding-left: 35px;
+}
+
+.navbar .mr-right img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 116px;
+    top: 22px;
+    cursor: pointer;
 }
 
 input[type="submit"]{
     background: #2A9E4A;
-    border-radius: 25px;
+    border-radius: 60px;
     color: #FFFFFF;
     font-family: "CircularStd-Book";
-    padding: 10px 15px 9px 15px;
+    padding: 12px 40px 10px 18px;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8125em;
     letter-spacing: 0.02em;
-    margin-right: 76px;
-    border: none; 
+    margin-right: 82px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, textarea:hover{
+   
 }
 
 input:focus, textarea:focus{
@@ -95,7 +109,7 @@ input:focus, textarea:focus{
 
 .sidenav {
     height: 100%;
-    width: 230px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -129,54 +143,44 @@ input:focus, textarea:focus{
     display: none;
 }
 
-.carousel{
+.account-div{
     width: 100%;
 }
 
-.carousel-item{
+.account-div{
     padding-left: 25px;
 }
 
-.carousel-item .account-num{
+.account-div .account-num{
     color: #8D948F;
     margin-bottom: 5px;
 }
 
-.carousel-item .account-bal{
+.account-div .check-balance-link{
+    margin-left: -27px;
+}
+
+.account-div .check-balance-link:hover i{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.account-div .account-bal{
     color: #2A9E4A;
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-bottom: 0px;
 }
 
-.carousel-item .acc-bal-text{
-    margin-bottom: 45px;
-    color: rgba(130, 130, 130, 0.6);
+.account-div .account-bal i{
+    font-size: 0.8em;
+    margin-left: 15px;
+    margin-top: 1px;
 }
 
-.carousel-control-prev, .carousel-control-prev .fas{
-    display: none;
-}
-
-.carousel-control-next .fas{
-    margin-left: -75px;
-    margin-top: 26px;
-    font-size: 1.4em;
-    color:#2A9E4A;
-}
-
-.carousel-indicators{
-    margin-left: -124px;
-    margin-bottom: 10px;
-}
-
-.carousel-indicators li{
-    background: rgba(42, 158, 74, 0.3);
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-}
-.carousel-indicators li.active{
-    background: #2A9E4A;
+.account-div .account-bal i:hover{
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .sidenav hr{
@@ -199,17 +203,22 @@ input:focus, textarea:focus{
 }
 
 .sidenav a.active{
-    background: rgb(24,117,240, 0.1);
-    border-left: 4px solid #1875F0;
+    background: rgba(42, 158, 74, 0.15) !important;
+    border-left: 3px solid #2A9E4A;
     padding: 10px 30px 10px 10px ;
 }
-.sidenav a.active:hover{
-    padding: 10px 30px 10px 10px;
+
+.sidenav a.card-body:hover{
+    background: rgba(42, 158, 74, 0.15) !important;
 }
-.sidenav a:hover{
-    transition: all 0.3s ease-in-out;
+
+.sidenav .hover:hover{
+    transition: all 0.1s ease-in-out;
     padding: 10px 5px 10px 30px !important;
-    font-weight: bold;
+    background: #F4FAF6 !important;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 5px 10px 25px !important;
+    margin-right: 20px;
 }
 
 .accordion .card-body{
@@ -228,13 +237,16 @@ input:focus, textarea:focus{
     margin-left: 2px;
 }
 
-.accordion .card-body a:hover{
-    background: none;
-    padding: 10px 5px 10px 25px !important;
-}
 
 .accordion .card-body a.act{
     font-weight: bold;
+}
+
+.accordion .transfer{
+    border-radius: 0px 30px 30px 0px;
+    padding: 8px 5px 8px 25px !important;
+    margin-right: 20px;
+    color: #2A9E4A !important;
 }
 
 .sidenav .utilities{
@@ -355,7 +367,7 @@ input:focus, textarea:focus{
 
 .main-page-content{
     margin: 0 auto;
-    width: 85%;
+    width: 75%;
     margin-top: 44px;
 }
 
@@ -364,6 +376,95 @@ input:focus, textarea:focus{
     top: 70px;
     right: 10px;
 }
+
+.modal .modal-title{
+    font-family: "CircularStd-Book";
+    font-size: 1.125em;
+    letter-spacing: 0.06em;
+    color: #42624B;
+}
+
+.main .main-page-content .modal{
+    margin-top: -140px;
+}
+
+.main .modal-body{
+    margin: 0;
+    padding: 0;
+}
+
+.main .modal-body .carousel{
+    margin-top: 20px;
+    margin-bottom: -30px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-type{
+    font-family: "CircularStd-Book";
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-num{
+    font-family: "CircularStd-Book";
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #828282;
+    font-weight: 100;
+    margin-left: -70px;
+    margin-bottom: 4px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-bal{
+    font-family: "CircularStd-Book";
+    font-size: 1.375em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #333333;
+    font-weight: bold;
+    margin-left: -58px;
+}
+
+.main .modal-body .carousel .carousel-indicators{
+    position: absolute;
+    top: 120px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel .carousel-indicators li{
+    background: rgba(42, 158, 74, 0.2);
+}
+
+.main .modal-body .carousel .carousel-indicators li.active{
+    background: #2A9E4A;
+}
+
+.main .modal-body .carousel .carousel-inner{
+    margin-bottom: 100px;
+}
+
+.main .modal-body .carousel .carousel-control-prev i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+}
+
+.main .modal-body .carousel .carousel-control-next i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+    margin-left: -30px;
+}
+
+
+
 
 .table-responsive{
     background: #FFFFFF;
@@ -379,9 +480,9 @@ input:focus, textarea:focus{
 
 .table thead tr th{
     border-bottom: 0.75px solid #D6E9DB !important;
-    padding: 6px !important;
-    padding-left: 25px !important;
-    font-size: 1em;
+    padding: 12px !important;
+    padding-left: 40px !important;
+    font-size: 0.9em;
     font-weight: 500;
     color: #08501C;
 }
@@ -395,10 +496,11 @@ input:focus, textarea:focus{
 }
 
 .table tbody tr td{
-    padding-left: 25px !important;
-    font-size: 1em;
+    padding-left: 40px !important;
+    font-size: 0.9em;
     font-weight: 500;
     color: #545454;
+    padding: 17px;
 }
 
 .table tbody tr td select{
@@ -408,9 +510,39 @@ input:focus, textarea:focus{
     background: transparent;
     padding: 0px !important;
     margin: 0px !important;
-    margin-right: 30px !important;
     margin-top: -5px !important;
     margin-bottom: -5px !important;
+}
+
+.table tbody tr td select.select-account{
+    width: 155px;
+}
+
+.table tbody tr td select option.light-option{
+    color: rgba(165, 165, 165, 0.8);
+}
+
+.table tbody tr td input.enter-phone{
+    width: 135px;
+}
+
+.table tbody tr td select.select-network{
+    width: 110px;
+    margin-left: -3px !important;
+}
+
+.table tbody tr td select.select-plan{
+    width: 90px;
+    margin-left: -3px !important;
+}
+
+.table tbody tr td select.select-type{
+    width: 90px;
+    margin-left: -3px !important;
+}
+
+.table tbody tr td input.enter-amount{
+    width: 115px;
 }
 
 .table tbody tr td input{
@@ -426,6 +558,10 @@ input:focus, textarea:focus{
 
 .table tbody tr td #exampleInputAccount{
     margin-right: 30px !important;
+}
+
+.table tbody tr td .input-amount{
+    width: 150px;
 }
 
 .table tbody tr td a{
@@ -444,19 +580,28 @@ input:focus, textarea:focus{
 }
 
 .table-button{
-    margin-left: 25px;
+    margin-left: 44px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
 
 .table-button .add-a-trans{
     background: rgba(210, 165, 14, 0.1);
-    border: 1px solid #D2A50E;
+    border: 1px dashed #D2A50E;
     border-radius: 2px;
     color: #D2A50E;
     padding: 10px 15px;
     cursor: pointer;
 }
+
+.table-button .add-a-trans:hover{
+    text-decoration: none;
+    color: #fff;
+    border: 2px dashed #D8A408;
+    background: #D8A408;
+}
+
+    
 
 .table-button .add-a-trans i{
     margin-right: 8px;
@@ -468,9 +613,15 @@ input:focus, textarea:focus{
     border: 1px solid #2A9E4A;
     border-radius: 3px;
     color: #fff;
-    padding: 10px 15px;
+    padding: 10px 40px;
     cursor: pointer;
+    font-family: "CircularStd-Book";
+    letter-spacing: 0.02em;
+    font-size: 0.9em;
 }
+
+
+
 
 
 

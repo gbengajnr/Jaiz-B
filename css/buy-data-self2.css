@@ -19,7 +19,7 @@ body {
 /* Navbar Starts Here */
 
 .navbar{
-    padding: 2px 20px;
+    padding: 8px 20px;
     background: #FFFFFF;
     box-shadow: 0px 4px 10px rgba(79, 79, 79, 0.07);
 }
@@ -31,20 +31,34 @@ body {
     font-weight: bold;
     letter-spacing: -1.6875px;
     color: #1875F0;
-    padding-left: 20px;
+    padding-left: 35px;
+}
+
+.navbar .mr-right img{
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    right: 116px;
+    top: 22px;
+    cursor: pointer;
 }
 
 input[type="submit"]{
     background: #2A9E4A;
-    border-radius: 25px;
+    border-radius: 60px;
     color: #FFFFFF;
     font-family: "CircularStd-Book";
-    padding: 10px 15px 9px 15px;
+    padding: 12px 40px 10px 18px;
     text-transform: uppercase;
-    font-size: 0.9em;
+    font-size: 0.8125em;
     letter-spacing: 0.02em;
-    margin-right: 76px;
-    border: none;  
+    margin-right: 82px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, textarea:hover{
+   
 }
 
 input:focus, textarea:focus{
@@ -95,7 +109,7 @@ input:focus, textarea:focus{
 
 .sidenav {
     height: 100%;
-    width: 230px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -129,54 +143,44 @@ input:focus, textarea:focus{
     display: none;
 }
 
-.carousel{
+.account-div{
     width: 100%;
 }
 
-.carousel-item{
+.account-div{
     padding-left: 25px;
 }
 
-.carousel-item .account-num{
+.account-div .account-num{
     color: #8D948F;
     margin-bottom: 5px;
 }
 
-.carousel-item .account-bal{
+.account-div .check-balance-link{
+    margin-left: -27px;
+}
+
+.account-div .check-balance-link:hover i{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.account-div .account-bal{
     color: #2A9E4A;
-    font-size: 1.9em;
+    font-size: 1.4em;
     margin-bottom: 0px;
 }
 
-.carousel-item .acc-bal-text{
-    margin-bottom: 45px;
-    color: rgba(130, 130, 130, 0.6);
+.account-div .account-bal i{
+    font-size: 0.8em;
+    margin-left: 15px;
+    margin-top: 1px;
 }
 
-.carousel-control-prev, .carousel-control-prev .fas{
-    display: none;
-}
-
-.carousel-control-next .fas{
-    margin-left: -75px;
-    margin-top: 26px;
-    font-size: 1.4em;
-    color:#2A9E4A;
-}
-
-.carousel-indicators{
-    margin-left: -124px;
-    margin-bottom: 10px;
-}
-
-.carousel-indicators li{
-    background: rgba(42, 158, 74, 0.3);
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-}
-.carousel-indicators li.active{
-    background: #2A9E4A;
+.account-div .account-bal i:hover{
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    cursor: pointer;
 }
 
 .sidenav hr{
@@ -199,17 +203,22 @@ input:focus, textarea:focus{
 }
 
 .sidenav a.active{
-    background: rgb(24,117,240, 0.1);
-    border-left: 4px solid #1875F0;
+    background: rgba(42, 158, 74, 0.15) !important;
+    border-left: 3px solid #2A9E4A;
     padding: 10px 30px 10px 10px ;
 }
-.sidenav a.active:hover{
-    padding: 10px 30px 10px 10px;
+
+.sidenav a.card-body:hover{
+    background: rgba(42, 158, 74, 0.15) !important;
 }
-.sidenav a:hover{
-    transition: all 0.3s ease-in-out;
+
+.sidenav .hover:hover{
+    transition: all 0.1s ease-in-out;
     padding: 10px 5px 10px 30px !important;
-    font-weight: bold;
+    background: #F4FAF6 !important;
+    border-radius: 0px 30px 30px 0px;
+    padding: 10px 5px 10px 25px !important;
+    margin-right: 20px;
 }
 
 .accordion .card-body{
@@ -228,14 +237,18 @@ input:focus, textarea:focus{
     margin-left: 2px;
 }
 
-.accordion .card-body a:hover{
-    background: none;
-    padding: 10px 5px 10px 25px !important;
-}
 
 .accordion .card-body a.act{
     font-weight: bold;
 }
+
+.accordion .buy-data{
+    border-radius: 0px 30px 30px 0px;
+    padding: 8px 5px 8px 25px !important;
+    margin-right: 20px;
+    color: #2A9E4A !important;
+}
+
 
 .sidenav .utilities{
     margin-top: 30px;
@@ -359,11 +372,140 @@ input:focus, textarea:focus{
     margin-top: 44px;
 }
 
+.account-div{
+    width: 100%;
+}
+
+.account-div{
+    padding-left: 25px;
+}
+
+.account-div .account-num{
+    color: #8D948F;
+    margin-bottom: 5px;
+}
+
+.account-div .check-balance-link{
+    margin-left: -27px;
+}
+
+.account-div .check-balance-link:hover i{
+    margin-left: 20px;
+    transition: all 0.3s ease-in-out;
+}
+
+.account-div .account-bal{
+    color: #2A9E4A;
+    font-size: 1.4em;
+    margin-bottom: 0px;
+}
+
+.account-div .account-bal i{
+    font-size: 0.8em;
+    margin-left: 15px;
+    margin-top: 1px;
+}
+
+.account-div .account-bal i:hover{
+    transition: all 0.3s ease-in-out;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
 .main-page-content .go-to-link{
     position: absolute;
     top: 70px;
     right: 10px;
 }
+
+.modal .modal-title{
+    font-family: "CircularStd-Book";
+    font-size: 1.125em;
+    letter-spacing: 0.06em;
+    color: #42624B;
+}
+
+.main .main-page-content .modal{
+    margin-top: -140px;
+}
+
+.main .modal-body{
+    margin: 0;
+    padding: 0;
+}
+
+.main .modal-body .carousel{
+    margin-top: -30px;
+    margin-bottom: -90px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-type{
+    font-family: "CircularStd-Book";
+    font-size: 1em;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #333333;
+    font-weight: 100;
+    margin-top: 10px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-num{
+    font-family: "CircularStd-Book";
+    font-size: 0.9em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #828282;
+    font-weight: 100;
+    margin-left: -70px;
+    margin-bottom: 4px;
+}
+
+.main .modal-body .carousel-inner .carousel-item .account-bal{
+    font-family: "CircularStd-Book";
+    font-size: 1.375em;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: #333333;
+    font-weight: bold;
+    margin-left: -58px;
+}
+
+.main .modal-body .carousel .carousel-indicators{
+    position: absolute;
+    top: 120px;
+    margin-left: 0;
+}
+
+.main .modal-body .carousel .carousel-indicators li{
+    background: rgba(42, 158, 74, 0.2);
+}
+
+.main .modal-body .carousel .carousel-indicators li.active{
+    background: #2A9E4A;
+}
+
+.main .modal-body .carousel .carousel-inner{
+    margin-bottom: 100px;
+}
+
+.main .modal-body .carousel .carousel-control-prev i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+}
+
+.main .modal-body .carousel .carousel-control-next i{
+    border: 1px solid #C4C4C4;
+    border-radius: 50%;
+    color: #2A9E4A;
+    padding: 10px 12px;
+    margin-left: -30px;
+}
+
+
+
 
 .own-account-content{
     background: #FFFFFF;
@@ -374,18 +516,26 @@ input:focus, textarea:focus{
 }
 
 .own-account-content .title{
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 12px;
+    padding-bottom: 10px;
     padding-left: 30px;
     margin: 0;
-    color: #08501C;
-    font-size: 1.125em;  
-}
+    font-size: 1em;
+    letter-spacing: 0.04em;
+    background: #D8A408;
+    color: #FFFFFF;
+    width: 25%;
+    -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 0 100%);
+    clip-path: polygon(0 0, 97% 0, 89% 100%, 0 100%);
+    border-radius: 7px 0;
+    font-weight: 600;
+} 
 
 .own-account-content hr{
     margin-top: 0px;
-    border: 0.75px solid #D6E9DB;
+    border: 0.5px solid #F7EFD8;
 }
+
 
 .form-box hr{
     margin-top: 18px;
@@ -410,16 +560,24 @@ input:focus, textarea:focus{
     padding-left: 62px;
 }
 
+.form-box .send{
+    margin-bottom: 20px;
+}
+
 .form-box .send-receive-text{
     color: #545454;
     margin-bottom: 8px;
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-weight: 500;
+    font-size: 0.9em;
 }
+
 .form-box .jaiz-account-text{
     color: #333333;
     font-family: "CircularStd-Book", Arial, sans-serif;
-    font-weight: 500;
+    font-weight: bold;
+   font-size: 1.2em;
+   margin-top: -5px;
 }
 
 .form-box .amount-div{
@@ -517,6 +675,9 @@ form .btn-submit{
 .modal#exampleModalCenter2 .modal-body p{
     margin-bottom: 50px;
     font-weight: 400;
+    letter-spacing: 0.06em;
+    color: #42624B;
+    font-size: 1.135em;
 }
 
 .modal .modal-body img{

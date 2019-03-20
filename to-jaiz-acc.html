@@ -37,8 +37,10 @@
                 <ul class="navbar-nav mr-auto"></ul>
 
                 <ul class="navbar-nav mr-right">
-                    
-                    <input type="submit" name="" value="Sign Out">               
+                    <a href="login-page.html"> 
+                        <input type="submit" name="" value="Sign Out">
+                        <img src="images/sign-out.png" alt="sign out-icon">
+                    </a>
 
                 </ul>
 
@@ -53,40 +55,22 @@
             <!-- Click on x in mobile view to close the sidenav -->
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 
-            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-                <ol class="carousel-indicators">
-                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-                </ol>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <p class="account-num">0123456789</p>
-                        <p class="account-bal">₦120,000</p>
-                        <p class="acc-bal-text">Account Balance</p>
-                    </div>
-                    <div class="carousel-item">
-                        <p class="account-num">2003456789</p>
-                        <p class="account-bal">₦80,000</p>
-                        <p class="acc-bal-text">Account Balance</p>
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                    <i class="fas fa-chevron-left"></i> <span aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                    <i class="fas fa-chevron-right"></i> <span aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
+            <div class="account-div">
+                <p class="account-num">2 Accounts</p>
+
+                <!-- Button trigger modal -->
+                <a href="" class="check-balance-link" data-toggle="modal" data-target="#exampleModalCenter"><p class="account-bal">Check Balance<i class="fas fa-chevron-right"></i></p></a>
+                <br/>
             </div>
+        
 
             <hr>
 
             <div class="accordion" id="accordionExample">  
                 
-                <a href="Dashboard.html"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
+                <a href="Dashboard.html" class="hover"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
 
-                <a class="collapsed buy-airtime" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="collapsed buy-airtime hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -96,7 +80,7 @@
                     </div>
                 </div>
                 
-                <a class="collapsed buy-data" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="collapsed buy-data hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <img src="images/Vector.png"><span>Buy Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -106,39 +90,38 @@
                     </div>
                 </div>
 
-                <a class="collapsed transfer" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="collapsed transfer active hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
                     <div class="card-body">
                         <a href="own.acc-tranfer.html">Own Account Transfer</a>
                         <a href="to-jaiz-acc.html" class="act">To Jaiz Account</a>
-                        <a href="to-other-banks.html">To other Banks</a>
+                        <a href="to-other-banks.html">To Other Banks</a>
                         <a href="to-beneficiary.html">To Beneficiary</a>
-                        
+                    
                     </div>
 
                 </div>
 
-                <a href="transaction-history.html"><img src="images/refresh-icon.png" class="refresh-icon"><span>Transaction History</span></a>
+                <a href="transaction-history.html" class="hover"><img src="images/refresh-icon.png" class="refresh-icon"><span>Transaction History</span></a>
 
                 <p class="utilities">Utilities</p>
 
-                <a href="internet.html"><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
+                <a href="internet.html" class="hover"><img src="images/internet-icon.png" class="internet-icon"><span>Internet</span></a>
 
-                <a href="electricity.html"><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
+                <a href="electricity.html" class="hover"><img src="images/electricity-icon.png" class="electricity-icon"><span>Electricity</span></a>
 
-                <a href="cable-tv.html"><img src="images/television-icon.png" class="television-icon"><span>Cable TV</span></a>
+                <a href="cable-tv.html" class="hover"><img src="images/television-icon.png" class="television-icon"><span>Cable TV</span></a>
 
-                <a href="toll.html"><img src="images/toll-icon.png" class="toll-icon"><span>Toll</span></a>
+                <a href="toll.html" class="hover"><img src="images/toll-icon.png" class="toll-icon"><span>Toll</span></a>
 
-                <a href="other-utilities.html" class="other-utilities-text"><img src="images/tools-icon.png" class="tools-icon"><span>Other Utilities</span></a>
+                <a href="other-utilities.html" class="other-utilities-text hover"><img src="images/tools-icon.png" class="tools-icon"><span>Other Utilities</span></a>
                 
                 <hr>
 
                 
-
-                <a href="manage-beneficiary.html" class="manage-bene-text"><img src="images/avatar-icon.png" class="avatar-icon"><span>Manage Beneficiaries</span></a>
+                <a href="manage-beneficiary.html" class="manage-bene-text hover"><img src="images/avatar-icon.png" class="avatar-icon"><span>Manage Beneficiaries</span></a>
             
                 <a href="login-page.html" class="sign-out">Sign Out</a>
 
@@ -146,7 +129,7 @@
             
         </div>  
         <!-- Sidebar Navigation Ends Here -->
-
+        
         <!-- Main Page Content Starts Here -->
         <div class="main">
                 
@@ -158,15 +141,57 @@
                 
                 <div class="main-page-content">
 
-                    <h4>Transfer</h4><a href="to-jaiz-acc2.html" class="go-to-link">Go to 2nd page</a>
+                    <!-- Go-Back Modal -->
+                    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <p class="modal-title" id="exampleModalLongTitle">Account Balance</p>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel" data-interval="false">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <p class="account-type">Jaiz Savings Account</p>
+                                                <p class="account-num">0199878767</p>
+                                                <p class="account-bal">N23,000</p>
+                                            </div>
+                                            <div class="carousel-item">
+                                                <p class="account-type">Jaiz Savings Account</p>
+                                                <p class="account-num">0199878767</p>
+                                                <p class="account-bal">N23,000</p>
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <i class="fas fa-chevron-left"></i>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <i class="fas fa-chevron-right"></i>
+                                        </a>
+                                        <ol class="carousel-indicators">
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                                        </ol>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4>Transfer</h4><a href="to-jaiz-acc2.html" class="go-to-link">Go to 2nd page</a><a href="to-jaiz-acc-multi-trans.html" class="go-to-link-2">To 3rd page</a>
                     <div class="own-account-content">
-                        <p class="title">To Jaiz account</p>
+                        <p class="title">TO JAIZ ACCOUNT</p>
                         <hr>
                         <div class="form-box">
                             <form>
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Sending Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control form-control-lg" id="exampleFormControlSelect1">
                                     <option class="light-option">Choose account</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -177,7 +202,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleFormControlSelect1">Receiving Account</label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
+                                    <select class="form-control form-control-lg" id="exampleFormControlSelect1">
                                         <option class="light-option">Select from any of your accounts</option>
                                         <option>1</option>
                                         <option>2</option>
@@ -189,7 +214,7 @@
 
                                 <div class="form-group">
                                     <label for="exampleInputEmail1">Amount (₦)</label>
-                                    <input type="number" class="form-control" id="exampleInputAmount" placeholder="Enter Amount">
+                                    <input type="number" class="form-control form-control-lg" id="exampleInputAmount" placeholder="Enter Amount">
                                 </div>
 
                                 <div class="form-check">
@@ -201,21 +226,20 @@
 
                                 <button type="submit" class="btn-submit">PROCEED</button>
 
-                                <button type="submit" class="add-a-transaction"><i class="fas fa-plus"></i> Add A Transaction</button>
+                                <a href="to-jaiz-acc-multi-trans.html" class="add-a-transaction"><i class="fas fa-plus"></i> Add A Transaction</a>
                             </form>
                         </div>
                     </div>
 
-                    <hp class="recent-trans-text">Recent Transaction History</p>
+                    <p class="recent-trans-text">Recent Transaction History</p>
                     <div class="table-responsive">
                         <table class="table table-borderless">
                             <thead>
                                 <tr>
                                     <th scope="col">Date</th>
                                     <th scope="col">Sending Account</th>
-                                    <th scope="col">Receiver</th>
-                                    <th scope="col">Bank</th>
                                     <th scope="col">Amount</th>
+                                    <th scope="col">Network</th>
                                     <th scope="col" class="hidden-col">Hidden</th>
                                 </tr>
                             </thead>
@@ -223,25 +247,22 @@
                                 <tr>
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>Jaiz Bank</td>
-                                    <td>N10,000</td>
+                                    <td>N1,000</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr class="stripped">
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>Jaiz Bank</td>
-                                    <td>N10,000</td>
+                                    <td>N100</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                                 <tr>
                                     <td>22-10-2018</td>
                                     <td>Jaiz Savings Account</td>
-                                    <td>Ndubuisi Kanu</td>
-                                    <td>Jaiz Bank</td>
-                                    <td>N10,000</td>
+                                    <td>N400</td>
+                                    <td>MTN NG</td>
                                     <td><a href="">Redo</a></td>
                                 </tr>
                             </tbody>

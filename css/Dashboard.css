@@ -111,7 +111,7 @@ input:focus, textarea:focus{
 
 .sidenav {
     height: 100%;
-    width: 230px;
+    width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -449,6 +449,12 @@ input:focus, textarea:focus{
     font-size: 0.5em;
 }
 
+.first-box .amount-text i:hover{
+    transition: all 1s ease-in-out;
+    margin-left: 110px;
+    cursor: pointer;
+}
+
 .first-box .available-bal-text{
     font-family: "CircularStd-Book";
     font-size: 1em;
@@ -513,7 +519,7 @@ input:focus, textarea:focus{
 }
 
 .second-box .table tbody tr td{
-    padding: 20px 20px;
+    padding: 19px 20px;
     font-family: "CircularStd-Book";
     font-size: 1em;
     line-height: normal;
@@ -546,6 +552,7 @@ input:focus, textarea:focus{
     background: #FFFFFF;
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
     border-radius: 0 0 7px 7px;
+    margin-bottom: 30px;
 }
 
 .third-box-header img{
@@ -584,10 +591,14 @@ input:focus, textarea:focus{
     height: 12px;
 }
 
+.main-page-content hr{
+    width: 97%;
+}
+
 
 .main-page-content .footer-text {
     text-align: center;
-    margin-top: 30px;
+    margin-top: 40px;
     margin-bottom: 40px;
     font-family: "CircularStd-Book";
     line-height: normal;
