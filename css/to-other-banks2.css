@@ -241,6 +241,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 
 .sidenav .utilities{
     margin-top: 30px;
@@ -673,7 +698,12 @@ form .btn-submit{
         margin-left: 26%;
     }
 
+    .own-account-content .title{
+        width: 30%;
+    }
+
 }
+
 
 @media screen and (max-width: 1188px){
 
@@ -713,6 +743,10 @@ form .btn-submit{
         margin-left: 25%;
     }
 
+    .own-account-content .title{
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 920px){
@@ -739,6 +773,10 @@ form .btn-submit{
 
     .form-box .veri-field{
         margin-left: 17%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
     }
 
 }
@@ -900,6 +938,10 @@ form .btn-submit{
         width: 40%;
     }
 
+    .own-account-content .title{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 492px){
@@ -908,12 +950,20 @@ form .btn-submit{
         margin-left: 15%;
     }
 
+    .own-account-content .title{
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 436px){
 
     .form-box .veri-field{
         margin-left: 10%;
+    }
+
+    .own-account-content .title{
+        width: 70%;
     }
 
 }
@@ -972,6 +1022,10 @@ form .btn-submit{
 
     .form-box .veri-field{
         margin-left: 5%;
+    }
+
+    .own-account-content .title{
+        width: 85%;
     }
 
 }

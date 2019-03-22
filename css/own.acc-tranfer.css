@@ -249,6 +249,30 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
 
 .sidenav .utilities{
     margin-top: 30px;
@@ -676,6 +700,26 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
+@media screen and (max-width: 1440px){
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1108px){
+    
+    .own-account-content .title{
+        width: 35%;
+    }
+
+    
+    .table{
+        width: 110%;
+    }
+
+}
+
 @media screen and (max-width: 1040px){
 
     .form-box{
@@ -683,7 +727,11 @@ form .btn-submit{
     }
 
     .table{
-        width: 110%;
+        width: 120%;
+    }
+
+    .own-account-content .title{
+        width: 40%;
     }
 
 }
@@ -694,12 +742,20 @@ form .btn-submit{
         width: 130%;
     }
 
+    .own-account-content .title{
+        width: 45%;
+    }
+
 }
 
 @media screen and (max-width: 858px){
 
     .table{
-        width: 150%;
+        width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 50%;
     }
 
 }
@@ -784,7 +840,7 @@ form .btn-submit{
     }
 
     .table{
-        width: 110%;
+        width: 120%;
     }
 
 }
@@ -792,7 +848,7 @@ form .btn-submit{
 @media screen and (max-width: 749px){
 
     .table{
-        width: 130%;
+        width: 140%;
     }
 
 }
@@ -800,7 +856,7 @@ form .btn-submit{
 @media screen and (max-width: 638px){
 
     .table{
-        width: 150%;
+        width: 160%;
     }
 
 }
@@ -815,6 +871,10 @@ form .btn-submit{
         width: 170%;
     }
 
+    .own-account-content .title{
+        width: 60%;
+    }
+
 }
 
 @media screen and (max-width: 495px){
@@ -823,12 +883,16 @@ form .btn-submit{
         width: 100%;
     }
 
+    .table{
+        width: 180%;
+    }
+
 }
 
 @media screen and (max-width: 425px){
 
     .table{
-        width: 190%;
+        width: 200%;
     }
 
 }
@@ -836,7 +900,7 @@ form .btn-submit{
 @media screen and (max-width: 383px){
 
     .table{
-        width: 190%;
+        width: 210%;
     }
 
     .table tbody tr td{
@@ -844,26 +908,38 @@ form .btn-submit{
         font-size: 0.8em;
     }
 
+    .own-account-content .title{
+        width: 68%;
+    }
+
 }
 
 @media screen and (max-width: 356px){
-
-    .table{
-        width: 200%;
-    }
-}
-
-@media screen and (max-width: 340px){
 
     .table{
         width: 220%;
     }
 }
 
+@media screen and (max-width: 340px){
+
+    .table{
+        width: 240%;
+    }
+
+    .own-account-content .title{
+        width: 75%;
+    }
+}
+
 @media screen and (max-width: 312px){
 
     .table{
-        width: 230%;
+        width: 260%;
+    }
+
+    .own-account-content .title{
+        width: 76%;
     }
 }
 

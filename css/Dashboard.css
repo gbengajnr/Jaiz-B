@@ -198,9 +198,29 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
-
-.accordion .active:hover{
-   
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
 }
 
 .accordion .card-body a{
@@ -450,8 +470,6 @@ input:focus, textarea:focus{
 }
 
 .first-box .amount-text i:hover{
-    transition: all 1s ease-in-out;
-    margin-left: 110px;
     cursor: pointer;
 }
 
@@ -535,7 +553,7 @@ input:focus, textarea:focus{
 
 .third-box-header{
     display: flex;
-    background: #FFFFFF;
+    background: #fff;
     padding-top: 20px;
     border-radius: 7px 7px 0 0;
 }
@@ -614,11 +632,216 @@ input:focus, textarea:focus{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 1199px){
+@media screen and (max-width: 1368px){
+    .right-dash-row .table{
+        width: 105%;
+    }
 
-   
+    .right-dash-row hr{
+        width: 104.9%;
+    }
+
+    .third-box-header{
+        width: 104.9%;
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 1346px){
+    .second-box .table tbody tr td{
+        padding: 19px 19px;
+
+    }
+
+    .right-dash-row .table{
+        width: 105%;
+    }
+
+    .right-dash-row hr{
+        width: 104.9%;
+    }
+
+    .third-box-header{
+        width: 104.9%;
+    }
+}
+
+@media screen and (max-width: 1330px){
+    .right-dash-row .table tbody tr td{
+        padding: 22px 25px;
+      
+    }
+    .second-box .table{
+        width: 105%;
+
+    }
 
 }
+
+
+@media screen and (max-width: 1318px){
+    .second-box hr{
+        width: 104%;
+    }
+
+}
+
+@media screen and (max-width: 1298px){
+    .first-box .amount-text i{
+        margin-left: 80px;
+
+    }
+   
+}
+
+@media screen and (max-width: 1283px){
+    .second-box .table{
+        width: 105%;
+
+    }
+   
+}
+
+@media screen and (max-width: 1282px){
+    .second-box .table{
+        width: 105%;
+
+    }
+    .second-box .table tbody tr td{
+        padding: 19px 15px;
+
+    }
+}
+
+
+@media screen and (max-width: 1260px){
+    .first-box .amount-text i:hover{
+       
+        cursor: pointer;
+    }
+
+    .first-box .amount-text i{
+        margin-left: 60px;
+    }
+   
+}
+
+@media screen and (max-width: 1254px){
+    .second-box .table{
+        width: 105%;
+
+    }
+   
+}
+
+
+@media screen and (max-width: 1251px){
+    .right-dash-row .table{
+        width: 105%;
+    }
+
+    .right-dash-row hr{
+        width: 104.9%;
+    }
+
+    .third-box-header{
+        width: 104.9%;
+    }
+
+    .first-box .amount-text i{
+        margin-left: 70px;
+
+    }
+
+   
+}
+
+@media screen and (max-width: 1221px){
+
+    .second-box .table{
+        width: 110%;
+
+    }
+
+    .second-box hr{
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width: 1206px){
+    .right-dash-row .table{
+        width: 115%;
+    }
+
+    .right-dash-row hr{
+        width: 115%;
+    }
+
+    .third-box-header{
+        width: 115%;
+    }
+
+    .first-box .amount-text i{
+        margin-left: 45px;
+
+    }
+
+}
+
+@media screen and (max-width: 1202px){
+    .first-box .amount-text i:hover{
+        
+        cursor: pointer;
+    }
+
+}    
+
+@media screen and (max-width: 1180px){
+    
+    .first-box .amount-text i{
+        margin-left: 50px;
+
+    }
+
+    .second-box .table{
+        width: 115%;
+
+    }
+
+    .second-box hr{
+        width: 115%;
+    }
+  
+}
+
+
+@media screen and (max-width: 1164px){
+    
+    .first-box .amount-text i{
+        margin-left: 40px;
+
+    }
+
+
+}  
+
+
+@media screen and (max-width: 1143px){
+    
+    .first-box .amount-text i{
+        margin-left: 35px;
+
+    }
+
+    .second-box .table{
+        width: 120%;
+    }
+
+} 
 
 @media screen and (max-width: 1129px){
 
@@ -626,6 +849,188 @@ input:focus, textarea:focus{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
+    }
+
+     
+    .first-box .amount-text i{
+        margin-left: 33px;
+
+    }
+
+}
+
+@media screen and (max-width: 1128px){
+    .right-dash-row .table{
+        width: 116%;
+    }
+
+    .third-box-header{
+        width: 116%;
+    }
+}  
+
+@media screen and (max-width: 1126px){
+    .first-box .amount-text i:hover{
+        
+        cursor: pointer;
+    }
+
+    .first-box .amount-text i{
+        margin-left: 30px;
+    }
+
+}
+@media screen and (max-width: 1121px){
+    .right-dash-row .table{
+        width: 120%;
+    }
+
+    .right-dash-row hr{
+        width: 120%;
+    }
+
+    .third-box-header{
+        width: 120%;
+    }
+}
+
+
+@media screen and (max-width: 1109px){
+     
+    .first-box .amount-text i{
+        margin-left: 30px;
+
+    }    
+
+    .second-box .table{
+        width: 130%;
+    }
+
+    .second-box hr{
+        width: 130%;
+    }
+    
+}
+
+@media screen and (max-width: 1094px){
+     
+    .first-box .amount-text i{
+        margin-left: 20px;
+
+    }    
+
+    .right-dash-row .table{
+        width: 130%;
+    }
+
+    .right-dash-row hr{
+        width: 130%;
+    }
+
+    .third-box-header{
+        width: 130%;
+    }
+
+    
+    
+}
+
+@media screen and (max-width: 1093px){
+     
+    .first-box .amount-text i{
+        margin-left: 40px;
+
+    } 
+    
+    .first-box{
+        margin-bottom: -14px;
+    }
+
+    .amount-text {
+        font-size: 2.5em !important;
+        margin-left: 25px !important;
+    }
+
+    .available-bal-text{
+        margin-left: 25px !important;
+    }
+
+    .account-number-text{
+        margin-left: 25px !important;
+    }
+
+}
+
+
+@media screen and (max-width: 1049px){
+    .second-box .table{
+        width: 150%;
+    }
+
+    .second-box hr{
+        width: 150%;
+    }
+}
+
+@media screen and (max-width: 1034px){
+    .amount-text {
+       font-size: 2em !important; 
+    }
+
+    .account-number-text{
+        padding-left: 10px;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .second-box{
+        margin-bottom: 45px;
+    }
+
+    .second-box .table{
+        width: 80%;
+    }
+
+    .second-box hr{
+        width: 100%;
+    }
+
+    .right-dash-row .table{
+        width: 100%;
+    }
+
+    .third-box-header{
+        width: 100%;
+    }
+
+    .right-dash-row hr{
+        width: 100%;
+    }
+
+    .second-box tbody tr td{
+        padding-left: 40px !important;
+    }
+
+    .first-box .amount-text i{
+        margin-left: 250px;
+    }
+
+
+    .first-box{
+        margin-bottom: -14px;
+    }
+
+    .amount-text {
+        font-size: 4em !important;
+        margin-left: 40px !important;
+    }
+
+    .available-bal-text{
+        margin-left: 48px !important;
+    }
+
+    .account-number-text{
+        margin-left: 40px !important;
     }
 
 }

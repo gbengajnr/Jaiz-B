@@ -250,6 +250,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -674,11 +699,7 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 1040px){
-
-    .form-box{
-        width: 70%;
-    }
+@media screen and (max-width: 2500px){
 
     .table{
         width: 110%;
@@ -686,7 +707,15 @@ form .btn-submit{
 
 }
 
-@media screen and (max-width: 969px){
+@media screen and (max-width: 1440px){
+
+    .table{
+        width: 120%;
+    }
+
+}
+
+@media screen and (max-width: 1066px){
 
     .table{
         width: 130%;
@@ -694,10 +723,57 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 1040px){
+
+    .form-box{
+        width: 70%;
+    }
+
+    .table{
+        width: 140%;
+    }
+
+}
+@media screen and (max-width: 1040px){
+
+    .own-account-content .title{
+        width: 30% !important;
+    }
+
+}    
+
+@media screen and (max-width: 969px){
+
+    .table{
+        width: 160%;
+    }
+
+}
+
+@media screen and (max-width: 868px){
+
+    .own-account-content .title{
+        width: 35% !important;
+    }
+
+    .table{
+        width: 170%;
+    }
+
+}
+
 @media screen and (max-width: 858px){
 
     .table{
-        width: 150%;
+        width: 180%;
+    }
+
+}
+
+@media screen and (max-width: 794px){
+
+    .table{
+        width: 190%;
     }
 
 }
@@ -705,7 +781,7 @@ form .btn-submit{
 @media screen and (max-width: 777px){
 
     .table{
-        width: 160%;
+        width: 200%;
     }
 
 }
@@ -782,7 +858,7 @@ form .btn-submit{
     }
 
     .table{
-        width: 110%;
+        width: 210%;
     }
 
 }
@@ -790,7 +866,7 @@ form .btn-submit{
 @media screen and (max-width: 749px){
 
     .table{
-        width: 130%;
+        width: 220%;
     }
 
 }
@@ -798,7 +874,7 @@ form .btn-submit{
 @media screen and (max-width: 638px){
 
     .table{
-        width: 150%;
+        width: 230%;
     }
 
 }
@@ -810,8 +886,13 @@ form .btn-submit{
     }
 
     .table{
-        width: 170%;
+        width: 240%;
     }
+ 
+    .own-account-content .title{
+        width: 45% !important;
+    }
+   
 
 }
 
@@ -826,7 +907,11 @@ form .btn-submit{
 @media screen and (max-width: 425px){
 
     .table{
-        width: 190%;
+        width: 260%;
+    }
+
+    .own-account-content .title{
+        width: 50% !important;
     }
 
 }
@@ -834,7 +919,7 @@ form .btn-submit{
 @media screen and (max-width: 383px){
 
     .table{
-        width: 190%;
+        width: 270%;
     }
 
     .table tbody tr td{
@@ -847,21 +932,23 @@ form .btn-submit{
 @media screen and (max-width: 356px){
 
     .table{
-        width: 200%;
+        width: 280%;
     }
 }
 
 @media screen and (max-width: 340px){
 
     .table{
-        width: 220%;
+        width: 290%;
     }
+
 }
+
 
 @media screen and (max-width: 312px){
 
     .table{
-        width: 230%;
+        width: 300%;
     }
 }
 

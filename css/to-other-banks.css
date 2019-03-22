@@ -250,6 +250,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 
 .sidenav .utilities{
     margin-top: 30px;
@@ -605,24 +630,31 @@ form .btn-submit{
     cursor: pointer;
 }
 
+.add-a-trans{
+    text-decoration: none !important;
+    color: #D2A50E;
+}
+
 .add-a-transaction{
     background: rgba(210, 165, 14, 0.1);
     border: 1.5px dashed #D2A50E;
     border-radius: 3px;
-    padding: 15px 110px;
-    width: 100%;
+    margin: 0 auto !important;
+    width: 100% !important;
     color: #D2A50E;
     cursor: pointer;
     margin-left: 8px;
+    text-align: center;
+    padding: 12px;
 }
 
-
-
 .add-a-transaction:hover{
-    text-decoration: none;
-    color: #Dfff;
     background: #D2A50E;
-    width: 100%;
+}
+
+.add-a-transaction:hover > .add-a-trans{
+    text-decoration: none;
+    color: #fff;
 }
 
 .recent-trans-text{
@@ -693,11 +725,14 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 1040px){
-
-    .form-box{
-        width: 70%;
+@media screen and (max-width: 1204px){
+    .own-account-content .title{
+        width: 30%;
     }
+
+}
+
+@media screen and (max-width: 1193px){
 
     .table{
         width: 110%;
@@ -705,15 +740,47 @@ form .btn-submit{
 
 }
 
-@media screen and (max-width: 969px){
+@media screen and (max-width: 1106px){
 
     .table{
-        width: 130%;
+        width: 120%;
     }
 
 }
 
-@media screen and (max-width: 858px){
+
+@media screen and (max-width: 1056px){
+    .own-account-content .title{
+        width: 35%;
+    }
+
+}
+
+@media screen and (max-width: 1040px){
+
+    .form-box{
+        width: 70%;
+    }
+
+    .table{
+        width: 140%;
+    }
+
+}
+
+@media screen and (max-width: 969px){
+
+    .table{
+        width: 150%;
+    }
+
+    .own-account-content .title{
+        width: 40%;
+    }
+
+}
+
+@media screen and (max-width: 910px){
 
     .table{
         width: 150%;
@@ -721,10 +788,56 @@ form .btn-submit{
 
 }
 
-@media screen and (max-width: 777px){
+@media screen and (max-width: 877px){
 
     .table{
         width: 160%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 858px){
+
+    .table{
+        width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 840px){
+
+    .table{
+        width: 170%;
+    }
+
+}
+
+@media screen and (max-width: 805px){
+
+    .table{
+        width: 180%;
+    }
+
+}
+
+@media screen and (max-width: 777px){
+
+    .table{
+        width: 180%;
+    }
+
+}
+
+@media screen and (max-width: 774px){
+
+    .table{
+        width: 190%;
     }
 
 }
@@ -801,7 +914,15 @@ form .btn-submit{
     }
 
     .table{
-        width: 110%;
+        width: 130%;
+    }
+
+}
+
+@media screen and (max-width: 756px){
+
+    .table{
+        width: 140%;
     }
 
 }
@@ -809,15 +930,50 @@ form .btn-submit{
 @media screen and (max-width: 749px){
 
     .table{
-        width: 130%;
+        width: 140%;
     }
 
 }
 
-@media screen and (max-width: 638px){
+@media screen and (max-width: 749px){
 
     .table{
         width: 150%;
+    }
+
+}
+
+
+@media screen and (max-width: 659px){
+
+    .table{
+        width: 160%;
+    }
+
+}
+
+
+
+@media screen and (max-width: 638px){
+
+    .table{
+        width: 190%;
+    }
+
+}
+
+@media screen and (max-width: 620px){
+
+    .table{
+        width: 170%;
+    }
+
+}
+
+@media screen and (max-width: 585px){
+
+    .table{
+        width: 180%;
     }
 
 }
@@ -829,7 +985,23 @@ form .btn-submit{
     }
 
     .table{
-        width: 170%;
+        width: 190%;
+    }
+
+}
+
+@media screen and (max-width: 527px){
+
+    .table{
+        width: 200% !important;
+    }
+
+}
+
+@media screen and (max-width: 502px){
+
+    .table{
+        width: 220% !important;
     }
 
 }
@@ -848,6 +1020,18 @@ form .btn-submit{
         width: 190%;
     }
 
+    .own-account-content .title{
+        width: 55%;
+    }
+
+}
+
+@media screen and (max-width: 394px){
+
+    .table{
+        width: 230% !important;
+    }
+
 }
 
 @media screen and (max-width: 383px){
@@ -861,27 +1045,51 @@ form .btn-submit{
         font-size: 0.8em;
     }
 
+    .own-account-content .title{
+        width: 65%;
+    }
+
 }
 
 @media screen and (max-width: 356px){
 
     .table{
-        width: 200%;
+        width: 240% !important;
+    }
+}
+
+@media screen and (max-width: 342px){
+
+    .table{
+        width: 250% !important;
     }
 }
 
 @media screen and (max-width: 340px){
 
     .table{
-        width: 220%;
+        width: 260% !important;
+    }
+
+    .own-account-content .title{
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 318px){
+
+    .table{
+        width: 270% !important;
     }
 }
 
 @media screen and (max-width: 312px){
 
     .table{
-        width: 230%;
+        width: 280% !important;
     }
 }
+
+
 
 /* Responsive Page Ends Here*/

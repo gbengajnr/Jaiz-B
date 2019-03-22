@@ -249,6 +249,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -581,15 +606,27 @@ form .btn-submit{
     cursor: pointer;
 }
 
+.add-a-trans{
+    text-decoration: none !important;
+    color: #D2A50E;
+}
+
+.add-a-trans:hover{
+    color: #fff;
+    background: #D2A50E;
+}
+
 .add-a-transaction{
     background: rgba(210, 165, 14, 0.1);
     border: 1.5px dashed #D2A50E;
     border-radius: 3px;
-    padding: 15px 110px;
-    width: 100%;
+    margin: 0 auto !important;
+    width: 100% !important;
     color: #D2A50E;
     cursor: pointer;
     margin-left: 8px;
+    text-align: center;
+    padding: 12px;
 }
 
 
@@ -601,17 +638,6 @@ form .btn-submit{
     width: 100%;
 }
 
-.form-box .add-a-transaction:hover{
-    text-decoration: none;
-    color: #fff;
-    border: 2px solid #D8A408;
-    background: #D8A408;
-}
-
-.add-a-transaction:hover{
-    text-decoration: none;
-    color: #D2A50E;
-}
 
 .recent-trans-text{
     font-size: 1.2em;
@@ -679,6 +705,13 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
+@media screen and (max-width: 1203px){
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
 @media screen and (max-width: 1040px){
 
     .form-box{
@@ -689,12 +722,20 @@ form .btn-submit{
         width: 110%;
     }
 
+    .own-account-content .title{
+        width: 35%;
+    }
+
 }
 
 @media screen and (max-width: 969px){
 
     .table{
         width: 130%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
     }
 
 }
@@ -818,6 +859,10 @@ form .btn-submit{
         width: 170%;
     }
 
+    .own-account-content .title{
+        width: 55%;
+    }
+
 }
 
 @media screen and (max-width: 495px){
@@ -839,7 +884,7 @@ form .btn-submit{
 @media screen and (max-width: 383px){
 
     .table{
-        width: 190%;
+        width: 200%;
     }
 
     .table tbody tr td{
@@ -847,26 +892,34 @@ form .btn-submit{
         font-size: 0.8em;
     }
 
+    .own-account-content .title{
+        width: 65%;
+    }
+
 }
 
-@media screen and (max-width: 356px){
+@media screen and (max-width: 358px){
 
     .table{
-        width: 200%;
+        width: 230%;
     }
 }
 
 @media screen and (max-width: 340px){
 
     .table{
-        width: 220%;
+        width: 250%;
+    }
+
+    .own-account-content .title{
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 312px){
 
     .table{
-        width: 230%;
+        width: 270%;
     }
 }
 

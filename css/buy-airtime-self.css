@@ -309,6 +309,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -546,7 +571,7 @@ input:focus, textarea:focus{
     letter-spacing: 0.04em;
     background: #D8A408;
     color: #FFFFFF;
-    width: 25%;
+    width: 25% ;
     -webkit-clip-path: polygon(0 0, 89% 0, 89% 100%, 0 100%);
     clip-path: polygon(0 0, 97% 0, 89% 100%, 0 100%);
     border-radius: 7px 0;
@@ -689,6 +714,7 @@ form .btn-submit:hover{
 
 /*Responsive Page Starts Here*/
 
+
 @media screen and (max-width: 1040px){
 
     .form-box{
@@ -699,12 +725,37 @@ form .btn-submit:hover{
         width: 110%;
     }
 
+    .own-account-content .title{
+        width: 50%;
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+    .own-account-content .title{
+        width: 30%;
+    }
+
 }
 
 @media screen and (max-width: 969px){
 
     .table{
         width: 130%;
+    }
+
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 879px){
+
+
+
+    .own-account-content .title{
+        width: 40%;
     }
 
 }
@@ -715,12 +766,38 @@ form .btn-submit:hover{
         width: 150%;
     }
 
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 850px){
+
+    .own-account-content .title{
+        width: 40%;
+    }
+
+}
+
+
+@media screen and (max-width: 810px){
+
+  
+    .own-account-content .title{
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 777px){
 
     .table{
         width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 30%;
     }
 
 }
@@ -810,10 +887,14 @@ form .btn-submit:hover{
 
 }
 
-@media screen and (max-width: 638px){
-
+@media screen and (max-width: 672px){
+    
+    .own-account-content .title{
+        width: 40%;
+    }
+    
     .table{
-        width: 150%;
+        width: 140%;
     }
 
 }
@@ -828,6 +909,10 @@ form .btn-submit:hover{
         width: 170%;
     }
 
+    .own-account-content .title{
+        width: 40%;
+    }
+
 }
 
 
@@ -837,12 +922,28 @@ form .btn-submit:hover{
         width: 100%;
     }
 
+    .own-account-content .title{
+        width: 40%;
+    }
+
 }
 
 @media screen and (max-width: 452px){
     .form-box{
         width: 75%;
     }
+
+    .own-account-content .title{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width: 423px){
+
+    .own-account-content .title{
+        width: 50%;
+    }
+
 }
 
 
@@ -852,11 +953,19 @@ form .btn-submit:hover{
         width: 190%;
     }
 
+    .own-account-content .title{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 408px){
     .form-box{
         width: 70%;
+    }
+
+    .own-account-content .title{
+        width: 50%;
     }
 }
 
@@ -868,9 +977,14 @@ form .btn-submit:hover{
         width: 190%;
     }
 
+
     .table tbody tr td{
         padding-left: 25px !important;
         font-size: 0.8em;
+    }
+
+    .own-account-content .title{
+        width: 50%;
     }
 
 }
@@ -880,11 +994,19 @@ form .btn-submit:hover{
     .table{
         width: 200%;
     }
+
+    .own-account-content .title{
+        width: 55%;
+    }
 }
 
 @media screen and (max-width: 344px){
     .form-box{
         width: 60%;
+    }
+
+    .own-account-content .title{
+        width: 55%;
     }
 }
 
@@ -893,12 +1015,20 @@ form .btn-submit:hover{
     .table{
         width: 220%;
     }
+
+    .own-account-content .title{
+        width: 60%;
+    }
 }
 
 @media screen and (max-width: 312px){
 
     .table{
         width: 230%;
+    }
+
+    .own-account-content .title{
+        width: 65%;
     }
 }
 

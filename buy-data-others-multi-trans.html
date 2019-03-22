@@ -70,7 +70,7 @@
                 
                 <a href="Dashboard.html" class="hover"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
 
-                <a class="collapsed buy-airtime hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="collapsed buy-airtime chevron hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 
-                <a class="collapsed buy-data active hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="collapsed buy-data active chevron hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <img src="images/Vector.png"><span>Buy Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse  show" aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <a class="collapsed transfer hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="collapsed transfer chevron hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -199,7 +199,7 @@
                                     <th scope="col"></th>
                                 </tr>
                             </thead>
-                            <tbody>
+                            <tbody id="tableBody">
                                 <tr id="row">
                                     <td>
                                         <select class="form-control select-account" id="exampleFormControlSelect1">
@@ -419,7 +419,7 @@
         // Add row
         var row=1;
             $(document).on("click", "#add-row", function () {
-                var new_row = '<tr id="row' + row + '"><td><select class="form-control select-account" id="exampleFormControlSelect1"><option class="light-option">Select Account</option><option>Jaiz Savings Account</option><option>Jaiz Current Account</option><option>Jaiz Fixed Account</option></select></td><td><input type="number" class="form-control enter-phone" id="exampleInputAccount" placeholder="Phone Number" /></td><td class="network-row"><select class="form-control select-network" id="exampleFormControlSelect1"></select></td><td><select class="form-control select-network" id="exampleFormControlSelect1"><option class="light-option">Select Network</option><option>MTN NG</option><option>GLO NG</option><option>9MOBILE</option><option>AIRTEL</option></select></td><td><input type="number" class="form-control enter-amount" id="exampleInputAccount" placeholder="Amount" /></td><td><button class="delete-row"><img src="images/delete1.png" alt="delete-icon"></button></td></tr>';
+                var new_row = '<tr id="row' + row + '"><td><select class="form-control select-account" id="exampleFormControlSelect1"><option class="light-option">Select Account</option><option>Jaiz Savings Account</option><option>Jaiz Current Account</option><option>Jaiz Fixed Account</option></select></td><td><input type="number" class="form-control enter-phone" id="exampleInputAccount" placeholder="Phone Number" /></td><td class="network-row"><select class="form-control select-network" id="exampleFormControlSelect1"><option class="light-option">Select Network</option><option>MTN NG</option><option>GLO NG</option><option>9MOBILE</option><option>AIRTEL</option></select></td><td><select class="form-control select-plan" id="exampleFormControlSelect1"><option class="light-option">Select Plan</option><option>Daily</option><option>Weekly</option><option>Monthly</option></select></td><td><select class="form-control select-type" id="exampleFormControlSelect1"><option class="light-option">Select Type</option><option>50MB</option><option>100MB</option><option>150MB</option><option>200MB</option><option>250MB</option><option>500MB</option><option>1GB</option><option>2GB</option><option>5GB</option><option>10GB</option><option>20GB</option><option>50GB</option></select></td><td><input type="number" class="form-control enter-amount" id="exampleInputAccount" placeholder="Amount" disabled /></td><td><button class="delete-row"><img src="images/delete1.png" alt="delete-icon"></button></td></tr>';
             
                 $('#tableBody').append(new_row);
                 row++;
@@ -429,7 +429,7 @@
             // Remove criterion
             $(document).on("click", ".delete-row", function () {
                 //  alert("deleting row#"+row);
-                if(row>1) {
+                if(row>0) {
                     $(this).closest('tr').remove();
                     row--;
                 }

@@ -250,6 +250,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -270,6 +295,7 @@ input:focus, textarea:focus{
     text-transform: uppercase;
     display: none;
 }
+
 
 /*Icons styling  start*/
 
@@ -372,6 +398,11 @@ input:focus, textarea:focus{
     margin-top: 44px;
 }
 
+.main-page-content h4 {
+    color: #333333;
+    font-size: 1.9em;
+}
+
 .main-page-content .go-to-link{
     position: absolute;
     top: 70px;
@@ -464,9 +495,6 @@ input:focus, textarea:focus{
     margin-left: -30px;
 }
 
-
-
-
 .own-account-content{
     background: #FFFFFF;
     box-shadow: 1px 2px 10px rgba(79, 79, 79, 0.02);
@@ -496,10 +524,6 @@ input:focus, textarea:focus{
     border: 0.5px solid #F7EFD8;
 }
 
-
-.form-box hr{
-    margin-top: 18px;
-}
 
 .form-box{
     margin: 0 auto;
@@ -601,6 +625,7 @@ form .btn-back{
     margin-bottom: 60px;
     margin-right: 10%;
     cursor: pointer;
+   
 }
 
 form .btn-submit{
@@ -703,6 +728,12 @@ form .btn-submit{
         margin-left: 38.5%;
     }
 
+    .own-account-content .title{
+        width: 25% !important;
+    }
+
+
+
 }
 
 @media screen and (max-width: 2384px){
@@ -797,6 +828,14 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 1152px){
+
+    .own-account-content .title{
+        width: 30% !important;
+    }
+
+}
+
 @media screen and (max-width: 1112px){
 
     .form-box{
@@ -813,6 +852,15 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 1083px){
+
+
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
 @media screen and (max-width: 1008px){
 
     .form-box .row{
@@ -821,6 +869,27 @@ form .btn-submit{
 
     .form-box .veri-field{
         margin-left: 25%;
+    }
+
+    .own-account-content .title{
+        width: 35% !important;
+    }
+
+}
+
+@media screen and (max-width: 952px){
+
+
+    .own-account-content .title{
+        width: 35% !important;
+    }
+
+}
+
+@media screen and (max-width: 940px){
+
+    .own-account-content .title{
+        width: 37% !important;
     }
 
 }
@@ -839,6 +908,11 @@ form .btn-submit{
         margin-left: 0px;
     }
 
+    .own-account-content .title{
+        width: 40% !important;
+    }
+    
+
 }
 
 @media screen and (max-width: 848px){
@@ -851,6 +925,11 @@ form .btn-submit{
         margin-left: 17%;
     }
 
+    .own-account-content .title{
+        width: 42% !important;
+    }
+    
+
 }
 
 @media screen and (max-width: 780px){
@@ -862,6 +941,11 @@ form .btn-submit{
     .form-box .veri-field{
         margin-left: 14%;
     }
+
+   .own-account-content .title{
+        width: 45% !important;
+    }
+   
 
 }
 
@@ -944,6 +1028,11 @@ form .btn-submit{
         margin-left: 24%;
     }
 
+    .own-account-content .title{
+        width: 35% !important;
+    }
+
+
 }
 
 @media screen and (max-width: 680px){
@@ -954,6 +1043,10 @@ form .btn-submit{
 
     .form-box .veri-field{
         margin-left: 20%;
+    }
+
+    .own-account-content .title{
+        width: 38% !important;
     }
 
 }
@@ -974,12 +1067,24 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 584px){
+    .own-account-content .title{
+        width: 45% !important;
+    }
+
+}
+
 @media screen and (max-width: 575px){
 
     .modal{
         width: 90%;
         margin-left: 25px;
     }
+
+    .own-account-content .title{
+        width: 50% !important;
+    }
+    
 
 }
 
@@ -1018,7 +1123,29 @@ form .btn-submit{
         margin-left: 15%;
     }
 
+    .own-account-content .title{
+        width: 45% !important;
+    }
+
 }
+
+@media screen and (max-width: 484px){
+
+    .own-account-content .title{
+        width: 50% !important;
+    }
+
+}
+
+
+@media screen and (max-width: 452px){
+
+    .own-account-content .title{
+        width: 55% !important;
+    }
+
+}
+
 
 @media screen and (max-width: 436px){
 
@@ -1026,6 +1153,10 @@ form .btn-submit{
         margin-left: 10%;
     }
 
+
+    .own-account-content .title{
+        width: 55% !important;
+    }
 }
 
 @media screen and (max-width: 404px){
@@ -1051,6 +1182,10 @@ form .btn-submit{
         margin-left: 5%;
     }
 
+
+    .own-account-content .title{
+        width: 65% !important;
+    }
 }
 
 @media screen and (max-width: 368px){
@@ -1084,12 +1219,20 @@ form .btn-submit{
         width: 100%;
     }
 
+    .own-account-content .title{
+        width: 68% !important;
+    }
+
 }
 
 @media screen and (max-width: 344px){
 
     .form-box .veri-field{
         margin-left: 5%;
+    }
+
+    .own-account-content .title{
+        width: 69% !important;
     }
 
 }
@@ -1108,12 +1251,29 @@ form .btn-submit{
         margin-left: 5%;
     }
 
+    .own-account-content .title{
+        width: 65% !important;
+    }
+
 }
 
-@media screen and (max-width: 305px){
+@media screen and (max-width: 310px){
+
+
+    .own-account-content .title{
+        width: 75% !important;
+    }
+
+}
+
+@media screen and (max-width: 306px){
 
     .form-box .veri-field{
         margin-left: 3%;
+    }
+
+    .own-account-content .title{
+        width: 75% !important;
     }
 
 }

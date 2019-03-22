@@ -249,6 +249,32 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -648,10 +674,19 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
-@media screen and (max-width: 1040px){
+@media screen and (max-width: 2500px){
 
-    .form-box{
-        width: 70%;
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+
+@media screen and (max-width: 1440px){
+
+    .own-account-content .title{
+        width: 30%;
     }
 
     .table{
@@ -660,10 +695,30 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 1040px){
+
+    .form-box{
+        width: 70%;
+    }
+
+    .table{
+        width: 120%;
+    }
+
+    .own-account-content .title{
+        width: 40%;
+    }
+
+}
+
 @media screen and (max-width: 969px){
 
     .table{
-        width: 130%;
+        width: 140%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
     }
 
 }
@@ -671,7 +726,11 @@ form .btn-submit{
 @media screen and (max-width: 858px){
 
     .table{
-        width: 150%;
+        width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 55%;
     }
 
 }
@@ -756,7 +815,11 @@ form .btn-submit{
     }
 
     .table{
-        width: 110%;
+        width: 130%;
+    }
+
+    .own-account-content .title{
+        width: 40%;
     }
 
 }
@@ -764,7 +827,11 @@ form .btn-submit{
 @media screen and (max-width: 749px){
 
     .table{
-        width: 130%;
+        width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
     }
 
 }
@@ -777,6 +844,14 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 576px){
+
+    .table{
+        width: 170%;
+    }
+
+}
+
 @media screen and (max-width: 557px){
 
     .form-box{
@@ -784,7 +859,11 @@ form .btn-submit{
     }
 
     .table{
-        width: 170%;
+        width: 190%;
+    }
+
+    .own-account-content .title{
+        width: 60%;
     }
 
 }
@@ -808,7 +887,11 @@ form .btn-submit{
 @media screen and (max-width: 405px){
 
     .table{
-        width: 130% !important;
+        width: 190% !important;
+    }
+
+    .own-account-content .title{
+        width: 70%;
     }
 
 }
@@ -829,21 +912,25 @@ form .btn-submit{
 @media screen and (max-width: 356px){
 
     .table{
-        width: 200%;
+        width: 200% !important;
     }
 }
 
 @media screen and (max-width: 340px){
 
     .table{
-        width: 220%;
+        width: 220% !important;
+    }
+
+    .own-account-content .title{
+        width: 80%;
     }
 }
 
 @media screen and (max-width: 312px){
 
     .table{
-        width: 230%;
+        width: 230% !important;
     }
 }
 

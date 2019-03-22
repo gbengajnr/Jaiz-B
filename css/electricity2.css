@@ -250,6 +250,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -685,6 +710,151 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
+@media screen and (min-width: 2500px){
+
+    .form-box .row{
+        margin-left: 16%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 38.5%;
+    }
+
+}
+
+@media screen and (max-width: 2500px){
+
+    .form-box .row{
+        margin-left: 16%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 38.5%;
+    }
+
+}
+
+@media screen and (max-width: 2384px){
+
+    .form-box .veri-field{
+        margin-left: 38%;
+    }
+
+}
+
+@media screen and (max-width: 2200px){
+
+    .form-box .veri-field{
+        margin-left: 37%;
+    }
+
+}
+
+@media screen and (max-width: 2044px){
+
+    .form-box .veri-field{
+        margin-left: 35.5%;
+    }
+
+}
+
+@media screen and (max-width: 1850px){
+
+    .form-box .row{
+        margin-left: 11%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 34%;
+    }
+
+}
+
+@media screen and (max-width: 1688px){
+
+    .form-box .veri-field{
+        margin-left: 32%;
+    }
+
+}
+
+@media screen and (max-width: 1550px){
+
+    .form-box .row{
+        margin-left: 9%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1440px){
+
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1405px){
+
+    .form-box .row{
+        margin-left: 6%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 28%;
+    }
+
+}
+
+@media screen and (max-width: 1300px){
+
+    .form-box .row{
+        margin-left: 3%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 26%;
+    }
+
+}
+
+@media screen and (max-width: 1188px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 24%;
+    }
+
+}
+
+@media screen and (max-width: 1112px){
+
+    .form-box{
+        width: 80%;
+    }
+
+    .form-box .row{
+        margin-left: 3%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 28%;
+    }
+
+    .own-account-content .title{
+        width: 35% !important;
+    }
+
+}
+
+
 @media screen and (max-width: 1040px){
 
     .form-box{
@@ -697,10 +867,47 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 1008px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 25%;
+    }
+
+}
+
+
 @media screen and (max-width: 969px){
 
     .table{
         width: 130%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
+    }
+
+}
+
+@media screen and (max-width: 920px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 21%;
+    }
+
+    .modal{
+        margin-left: 0px;
+    }
+
+    .own-account-content .title{
+        width: 45% !important;
     }
 
 }
@@ -711,12 +918,52 @@ form .btn-submit{
         width: 150%;
     }
 
+    .own-account-content .title{
+        width: 55%;
+    }
+
+}
+
+@media screen and (max-width: 848px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 17%;
+    }
+
+    .own-account-content .title{
+        width: 45% !important;
+    }
+
+}
+
+@media screen and (max-width: 780px){
+
+    .form-box .row{
+        margin-left: 0%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 14%;
+    }
+
+    .own-account-content .title{
+        width: 55% !important;
+    }
+
 }
 
 @media screen and (max-width: 777px){
 
     .table{
         width: 160%;
+    }
+
+    .own-account-content .title{
+        width: 45%;
     }
 
 }
@@ -792,8 +1039,16 @@ form .btn-submit{
         width: 100%;
     }
 
-    .table{
-        width: 110%;
+    .form-box .row{
+        margin-left: -2%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 24%;
+    }
+
+    .own-account-content .title{
+        width: 40% !important;
     }
 
 }
@@ -806,10 +1061,84 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 680px){
+
+    .form-box .row{
+        margin-left: -5%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 20%;
+    }
+
+    .own-account-content .title{
+        width: 45% !important;
+    }
+
+}
+
 @media screen and (max-width: 638px){
 
     .table{
         width: 150%;
+    }
+
+    .own-account-content .title{
+        width: 55%;
+    }
+
+}
+
+@media screen and (max-width: 608px){
+
+    .form-box{
+        width: 90%;
+    }
+
+    .form-box .row{
+        margin-left: -10%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 24%;
+    }
+
+}
+
+@media screen and (max-width: 575px){
+
+    .modal{
+        width: 90%;
+        margin-left: 25px;
+    }
+
+}
+
+@media screen and (max-width: 560px){
+
+    .main-page-content{
+        width: 90% !important;
+    }
+
+    .form-box{
+        width: 90% !important;
+    }
+
+    .form-box .veri-field{
+        margin-left: 20%;
+    }
+
+    .modal .modal-footer{
+        width: 95%;
+        margin-left: -10px;
+    }
+    
+    .modal .modal-footer .cancel-btn{
+        width: 40%;
+    }
+    
+    .modal .modal-footer .exit-btn{
+        width: 40%;
     }
 
 }
@@ -824,6 +1153,10 @@ form .btn-submit{
         width: 170%;
     }
 
+    .own-account-content .title{
+        width: 55% !important;
+    }
+
 }
 
 @media screen and (max-width: 495px){
@@ -834,10 +1167,59 @@ form .btn-submit{
 
 }
 
+@media screen and (max-width: 492px){
+
+    .form-box .veri-field{
+        margin-left: 15%;
+    }
+
+    .own-account-content .title{
+        width: 65% !important;
+    }
+
+}
+
+@media screen and (max-width: 436px){
+
+    .form-box .veri-field{
+        margin-left: 10%;
+    }
+
+}
+
 @media screen and (max-width: 425px){
 
     .table{
         width: 190%;
+    }
+
+    .own-account-content .title{
+        width: 65%;
+    }
+
+}
+
+@media screen and (max-width: 404px){
+
+    .modal{
+        margin-left: 15px !important;
+    }
+
+    .modal-body{
+        padding-left: 10px !important;
+        padding-right: 10px !important;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    .form-box .row{
+        margin-left: -20%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 5%;
     }
 
 }
@@ -853,6 +1235,43 @@ form .btn-submit{
         font-size: 0.8em;
     }
 
+    .own-account-content .title{
+        width: 75% !important;
+    }
+
+}
+
+@media screen and (max-width: 368px){
+
+    .form-box .row{
+        margin-left: -25%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 9%;
+    }
+
+    .form-box input.verify {
+        width: 45px;
+        height: 45px;
+        font-size: 1em;
+        margin-right: 10px;
+    }
+
+    .form-box form .buttons{
+        width: 90%;
+        display: block;
+    }
+
+    form .btn-back{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    
+    form .btn-submit{
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 356px){
@@ -860,6 +1279,18 @@ form .btn-submit{
     .table{
         width: 200%;
     }
+
+    .own-account-content .title{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 344px){
+
+    .form-box .veri-field{
+        margin-left: 5%;
+    }
+
 }
 
 @media screen and (max-width: 340px){
@@ -867,6 +1298,26 @@ form .btn-submit{
     .table{
         width: 220%;
     }
+
+    .own-account-content .title{
+        width: 80% !important;
+    }
+}
+
+@media screen and (max-width: 320px){
+
+    .main-page-content{
+        width: 98% !important;
+    }
+
+    .form-box .row{
+        margin-left: -25%;
+    }
+
+    .form-box .veri-field{
+        margin-left: 5%;
+    }
+
 }
 
 @media screen and (max-width: 312px){
@@ -874,6 +1325,14 @@ form .btn-submit{
     .table{
         width: 230%;
     }
+}
+
+@media screen and (max-width: 305px){
+
+    .form-box .veri-field{
+        margin-left: 3%;
+    }
+
 }
 
 /* Responsive Page Ends Here*/

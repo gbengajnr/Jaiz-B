@@ -249,6 +249,31 @@ input:focus, textarea:focus{
     color: #2A9E4A !important;
 }
 
+.chevron:after{
+    position: absolute;
+    display: inline-block;
+	border-style: solid;
+	border-width: 0.15em 0.15em 0 0;
+	content: '';
+	height: 0.6em;
+    width: 0.6em;
+    right: 36px;
+    color: #8D948F;
+    margin-top: 9px;
+	transform: rotate(315deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+    cursor: pointer;
+}
+.chevron.collapsed:after{
+    margin-top: 5px;
+    transform: rotate(135deg);
+    -moz-transition: all .3s linear;
+    -webkit-transition: all .3s linear;
+    transition: all .3s linear;
+}
+
 .sidenav .utilities{
     margin-top: 30px;
     padding-left: 25px !important;
@@ -648,6 +673,22 @@ form .btn-submit{
 
 /*Responsive Page Starts Here*/
 
+@media screen and (max-width: 2500px){
+
+    .own-account-content .title{
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 1100px){
+
+    .own-account-content .title{
+        width: 35%;
+    }
+
+}
+
 @media screen and (max-width: 1040px){
 
     .form-box{
@@ -658,6 +699,10 @@ form .btn-submit{
         width: 110%;
     }
 
+    .own-account-content .title{
+        width: 40%;
+    }
+   
 }
 
 @media screen and (max-width: 969px){
@@ -672,6 +717,10 @@ form .btn-submit{
 
     .table{
         width: 150%;
+    }
+
+    .own-account-content .title{
+        width: 50%;
     }
 
 }
@@ -759,6 +808,10 @@ form .btn-submit{
         width: 110%;
     }
 
+    .own-account-content .title{
+        width: 45%;
+    }
+
 }
 
 @media screen and (max-width: 749px){
@@ -775,6 +828,10 @@ form .btn-submit{
         width: 150%;
     }
 
+    .own-account-content .title{
+        width: 50%;
+    }
+
 }
 
 @media screen and (max-width: 557px){
@@ -785,6 +842,10 @@ form .btn-submit{
 
     .table{
         width: 170%;
+    }
+
+    .own-account-content .title{
+        width: 60%;
     }
 
 }
@@ -808,10 +869,11 @@ form .btn-submit{
 @media screen and (max-width: 405px){
 
     .table{
-        width: 130% !important;
+        width: 190% !important;
     }
 
 }
+
 
 @media screen and (max-width: 383px){
 
@@ -824,12 +886,16 @@ form .btn-submit{
         font-size: 0.8em;
     }
 
+    .own-account-content .title{
+        width: 75%;
+    }
+
 }
 
 @media screen and (max-width: 356px){
 
     .table{
-        width: 200%;
+        width: 220% !important;
     }
 }
 
@@ -844,6 +910,10 @@ form .btn-submit{
 
     .table{
         width: 230%;
+    }
+
+    .own-account-content .title{
+        width: 80%;
     }
 }
 

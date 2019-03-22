@@ -70,7 +70,7 @@
                 
                 <a href="Dashboard.html" class="hover"><img src="images/home-icon.png" class="home-icon"><span>Home</span></a>
 
-                <a class="collapsed buy-airtime hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <a class="collapsed buy-airtime chevron hover" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                     <img src="images/coupon-icon.png"><span>Buy Airtime</span>
                 </a>
                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionExample">
@@ -80,7 +80,7 @@
                     </div>
                 </div>
                 
-                <a class="collapsed buy-data hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                <a class="collapsed buy-data chevron hover" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                     <img src="images/Vector.png"><span>Buy Data</span>
                 </a>
                 <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
@@ -90,7 +90,7 @@
                     </div>
                 </div>
 
-                <a class="collapsed transfer active act hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                <a class="collapsed transfer active act chevron hover" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                     <img src="images/transfer-icon.png"><span>Transfer</span>
                 </a>
                 <div id="collapseThree" class="collapse show" aria-labelledby="headingThree" data-parent="#accordionExample">
@@ -193,10 +193,11 @@
                                     <th scope="col">Receiving Account Number</th>
                                     <th scope="col">Receiving Bank</th>
                                     <th scope="col">Amount</th>
+                                    <th scope="col"></th>
                                 </tr>
                             </thead>
-                            <tbody>
-                                <tr>
+                            <tbody id="tableBody">
+                                <tr id="row">
                                     <td>
                                         <select class="form-control" id="exampleFormControlSelect1">
                                             <option>Jaiz Savings Account</option>
@@ -216,9 +217,14 @@
                                     </td>
                                     <td>
                                         <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
+                                    <td>
+                                        <button class="delete-row">
+                                            <img src="images/delete1.png" alt="delete-icon">
+                                        </button>
                                     </td>
                                 </tr>
-                                <tr class="stripped">
+                                <tr id="row" class="stripped">
                                     <td>
                                         <select class="form-control" id="exampleFormControlSelect1">
                                             <option>Jaiz Savings Account</option>
@@ -238,9 +244,14 @@
                                     </td>
                                     <td>
                                         <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
+                                    <td>
+                                        <button class="delete-row">
+                                            <img src="images/delete1.png" alt="delete-icon">
+                                        </button>
                                     </td>
                                 </tr>
-                                <tr>
+                                <tr id="row">
                                     <td>
                                         <select class="form-control" id="exampleFormControlSelect1">
                                             <option>Jaiz Savings Account</option>
@@ -260,12 +271,17 @@
                                     </td>
                                     <td>
                                         <input type="number" class="form-control input-amount" id="exampleInputAmount" placeholder="Enter Amount">
+                                    </td>
+                                    <td>
+                                        <button class="delete-row">
+                                            <img src="images/delete1.png" alt="delete-icon">
+                                        </button>
                                     </td>
                                 </tr>
                             </tbody>
                         </table>
                         <div class="table-button">
-                            <button type="button" class="add-a-trans"><i class="fas fa-plus"></i>ADD A TRANSACTION</button>
+                            <button type="button" id="add-row" class="add-a-trans"><i class="fas fa-plus"></i>ADD A TRANSACTION</button>
                             <button type="button" class="proceed-btn">PROCEED</button>
                         </div>
                     </div> 
@@ -310,7 +326,7 @@
             // Add row
             var row=1;
             $(document).on("click", "#add-row", function () {
-                var new_row = '<tr id="row' + row + '"><td><select class="form-control select-account" id="exampleFormControlSelect1"><option class="light-option">Select Account</option><option>Jaiz Savings Account</option><option>Jaiz Current Account</option><option>Jaiz Fixed Account</option></select></td><td><input type="number" class="form-control enter-phone" id="exampleInputAccount" placeholder="Phone Number" /></td><td><select class="form-control select-network" id="exampleFormControlSelect1"><option class="light-option">Select Network</option><option>MTN NG</option><option>GLO NG</option><option>9MOBILE</option><option>AIRTEL</option></select></td><td><input type="number" class="form-control enter-amount" id="exampleInputAccount" placeholder="Amount" /></td><td><button class="delete-row"><img src="images/delete1.png" alt="delete-icon"></button></td></tr>';
+                var new_row = '<tr id="row' + row + '"><td> <select class="form-control" id="exampleFormControlSelect1"><option>Jaiz Savings Account</option><option>Jaiz Current Account</option><option>Jaiz Fixed Account</option></select></td><td><input type="number" class="form-control enter-phone" id="exampleInputAccount" placeholder="Enter Jaiz Account" /></td><td><select class="form-control bank-dropdown" id="exampleFormControlSelect1"></option><option>First Bank</option><option>EcoBank</option><option>GT Bank</option></select></td><td><input type="number" class="form-control input-amount" id="exampleInputAccount" placeholder="Enter Amount" /></td><td><button class="delete-row"><img src="images/delete1.png" alt="delete-icon"></button></td></tr>';
             
                 $('#tableBody').append(new_row);
                 row++;
@@ -320,7 +336,7 @@
             // Remove criterion
             $(document).on("click", ".delete-row", function () {
                 //  alert("deleting row#"+row);
-                if(row>1) {
+                if(row>0) {
                     $(this).closest('tr').remove();
                     row--;
                 }
