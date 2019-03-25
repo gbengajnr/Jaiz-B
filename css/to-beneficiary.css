@@ -611,11 +611,6 @@ form .btn-submit{
     color: #D2A50E;
 }
 
-.add-a-trans:hover{
-    color: #fff;
-    background: #D2A50E;
-}
-
 .add-a-transaction{
     background: rgba(210, 165, 14, 0.1);
     border: 1.5px dashed #D2A50E;
@@ -629,14 +624,15 @@ form .btn-submit{
     padding: 12px;
 }
 
-
-
 .add-a-transaction:hover{
+    background: #D2A50E;
+}
+
+.add-a-transaction:hover > .add-a-trans{
     text-decoration: none;
     color: #fff;
-    background: #D2A50E;
-    width: 100%;
 }
+
 
 
 .recent-trans-text{
