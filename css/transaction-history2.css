@@ -556,14 +556,14 @@ input:focus, textarea:focus{
     font-weight: 500;
     font-size: 0.9em;
 }
-
 .form-box .jaiz-account-text{
     color: #333333;
     font-family: "CircularStd-Book", Arial, sans-serif;
     font-weight: bold;
-   font-size: 1em;
+   font-size: 1.2em;
    margin-top: -5px;
 }
+
 
 
 .form-box .amount-div{

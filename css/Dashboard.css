@@ -794,7 +794,6 @@ input:focus, textarea:focus{
 
 @media screen and (max-width: 1202px){
     .first-box .amount-text i:hover{
-        
         cursor: pointer;
     }
 
@@ -854,7 +853,6 @@ input:focus, textarea:focus{
      
     .first-box .amount-text i{
         margin-left: 33px;
-
     }
 
 }
@@ -970,6 +968,10 @@ input:focus, textarea:focus{
     .second-box hr{
         width: 150%;
     }
+
+    .right-dash-row .table{
+        width: 130%;
+    }
 }
 
 @media screen and (max-width: 1034px){
@@ -977,9 +979,22 @@ input:focus, textarea:focus{
        font-size: 2em !important; 
     }
 
+    .first-box .amount-text i{
+        margin-left: 70px;
+    }
+
     .account-number-text{
         padding-left: 10px;
     }
+
+    .right-dash-row .table{
+        width: 140%;
+    }
+
+    .second-box .table{
+        width: 140%;
+    }
+
 }
 
 @media screen and (max-width: 991px){
@@ -1012,7 +1027,7 @@ input:focus, textarea:focus{
     }
 
     .first-box .amount-text i{
-        margin-left: 250px;
+        margin-left: 200px;
     }
 
 
@@ -1031,6 +1046,27 @@ input:focus, textarea:focus{
 
     .account-number-text{
         margin-left: 40px !important;
+    }
+
+}
+
+@media screen and (max-width: 890px){
+    .first-box .amount-text i{
+        margin-left: 150px;
+    }
+
+}
+
+@media screen and (max-width: 838px){
+    .first-box .amount-text i{
+        margin-left: 95px;
+    }
+}
+
+
+@media screen and (max-width: 838px){
+    .first-box .amount-text i{
+        margin-left: 70px;
     }
 
 }
@@ -1087,25 +1123,263 @@ input:focus, textarea:focus{
         width: 100%;
     }
 
-    
+    .main-page-content{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .main-page-content .header, .utilities-bar{
+        margin-left: -15px;
+    }
+
+    .header-1{
+        margin-right: 100px;
+    }
+
+    .first-box .amount-text i{
+        position: absolute;
+        right: 50px;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 662px){
+
+    .second-box .table{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 606px){
+
+    .second-box .table{
+        width: 100%;
+    }
+
+    .right-dash-row .table{
+        width: 110%;
+    }
+
+
+    .third-box-header{
+        width: 110%;
+    }
+
+    .right-dash-row hr{
+        width: 110%;
+    }
+
+}
+
+@media screen and (max-width: 564px){
+
+    .right-dash-row .table-responsive{
+        width: 100%;
+    }
+
 }
 
 
 @media screen and (max-width: 548px){
 
+   .second-box .table{
+       width: 110%;
+   }
+
+   .second-box hr{
+       width: 110%;
+   }
+
+}
+
+@media screen and (max-width: 529px){
+    .main-page-content .header{
+        display: inline-block;
+    }
+
+    .main-page-content .header .header-2{
+        margin-left: 30px;
+    }
+}
+
+@media screen and (max-width: 522px){
+
+    .third-box-header{
+        width: 130%;
+    }
+
+    .right-dash-row .table{
+        width: 130%;
+    }
+
+    .right-dash-row hr{
+        width: 130%;
+    }
+
+}
+
+@media screen and (max-width: 493px){
+
+    .second-box .table{
+        width: 120%;
+    }
+
     .main-page-content .utilities-bar .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 10px;
-        margin-left: -30px;
     }
 
-   
+}
+
+
+@media screen and (max-width: 457px){
+
+    .second-box .table{
+        width: 130%;
+    }
 
 }
 
-@media screen and (max-width: 405px){
-   
+@media screen and (max-width: 441px){
+
+    .third-box-header{
+        width: 150%;
+    }
+
+    .right-dash-row .table{
+        width: 150%;
+    }
+
+    .right-dash-row hr{
+        width: 150%;
+    }
+
 }
+
+
+@media screen and (max-width: 426px){
+
+    .second-box .table{
+        width: 140%;
+    }
+
+    .first-box .amount-text{
+        font-size: 2.5em !important;
+    }
+
+}
+
+
+@media screen and (max-width: 399px){
+
+    .second-box .table{
+        width: 150%;
+    }
+
+    .second-box hr{
+        width: 150%;
+    }
+
+    .account-number-text{
+        font-size: 1em !important;
+    }
+
+}
+
+@media screen and (max-width: 390px){
+
+    .third-box-header{
+        width: 160%;
+    }
+
+    .right-dash-row .table{
+        width: 160%;
+    }
+
+    .right-dash-row hr{
+        width: 160%;
+    }
+
+}
+
+@media screen and (max-width: 378px){
+
+    .second-box .table{
+        width: 160%;
+    }
+
+    .second-box hr{
+        width: 160%;
+    }
+    
+}
+
+@media screen and (max-width: 369px){
+
+    .main-page-content{
+        margin-left: -15px;
+        width: 105%;
+    }
+
+    .main-page-content .utilities-bar .container {
+        display: none;
+    }
+
+    .first-box{
+        width: 107%;
+        margin-top: 30px;
+    }
+    
+    .first-box-header{
+        margin-left: -15px;
+    }
+
+    .amount-text, .available-bal-text{
+        margin-left: 23px !important;
+    }
+
+    .account-number-text{
+        margin-left: 14px !important;
+    }
+
+    .second-box .table-responsive{
+        width: 107%;
+        background: #fff;
+    }
+
+    .second-box-header img{
+        margin-left: 25px;
+    }
+
+    .second-box .table tbody tr td{
+        padding: 19px 25px !important;
+    }
+
+    .right-dash-row .table-responsive{
+        width: 107%;
+    }
+
+    .footer-text{
+        width: 300px;
+        margin-left: 4%;
+    }
+    
+}
+
+@media screen and (max-width: 334px){
+
+    .first-box .amount-text i{
+        right: 20px !important;
+    }
+
+    .right-dash-row .table{
+        width: 180%;
+    }
+}
+
+
 
 /* Responsive Page Ends Here*/

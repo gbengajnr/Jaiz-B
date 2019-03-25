@@ -568,7 +568,25 @@ input:focus, textarea:focus{
     font-weight: bold;
    font-size: 1em;
    margin-top: -5px;
+}.form-box .send{
+    margin-bottom: 20px;
 }
+
+.form-box .send-receive-text{
+    color: #545454;
+    margin-bottom: 8px;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.form-box .jaiz-account-text{
+    color: #333333;
+    font-family: "CircularStd-Book", Arial, sans-serif;
+    font-weight: bold;
+   font-size: 1.2em;
+   margin-top: -5px;
+}
+
 
 .form-box .amount-div{
     margin: 0 auto;
